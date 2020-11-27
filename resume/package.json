@@ -20,7 +20,9 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "eslint:recommended",
+      "google"
     ]
   },
   "browserslist": {
