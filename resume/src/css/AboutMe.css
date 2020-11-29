@@ -1,0 +1,25 @@
+.main{
+    display: block;
+    height: 100vh;
+    margin: auto;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    font-size:3vh;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+img{
+    border-radius: 50%;
+    width:17vh;
+    border:5px solid gray;
+
+}
+
+h1{
+    color: white;
+    
+}

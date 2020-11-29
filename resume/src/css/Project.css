@@ -1,0 +1,86 @@
+.CardContainer{
+    width:40%;
+    height: 100%;
+    }
+  
+    .CardContainer .Card{
+      font-weight: bold;
+      position: relative;
+      width: 100%;
+      height: 100%;
+  
+    }
+    .CardContainer .Card a{
+      padding: 30px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      background: grey;
+      text-decoration: none;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.25s ease;
+  
+    }
+      .CardContainer .Card a:hover{
+        transform: translate(-30px, -30px);
+        border-color: #f0ea62;
+  
+      }
+      .CardContainer .Card a:hover .CardDisplay{
+        display:none;
+      }
+  
+      .CardContainer .Card a:hover .CardHover{
+        display:block;
+  
+      }
+  
+      .CardContainer .Card a .CardDisplay i{
+        font-size: 200%;
+  
+    /* margin-top: 10%;
+    margin-bottom: 10%; */
+  
+      }
+  
+      .CardContainer .Card a .CardDisplay h2{
+        margin: 20px 0 0;
+          font-size: 150%;
+      }
+  
+      .CardContainer .Card a .CardHover{
+        display:none;
+      }
+  
+      .CardContainer .Card a .CardHover h2{
+        margin: 20px 0;
+          font-size: 100%;
+      }
+  
+      .CardContainer .Card a .CardHover p{
+        font-weight: normal;
+          line-height: 1.5;
+            font-size: 50%;
+      }
+  
+      .CardContainer .Card a .CardHover h3{
+        margin: 20px 0 0;
+        font-weight: bold;
+        font-size: 16px;
+            color: #f0ea62;
+      }
+      .CardContainer .Card .CardBorder{
+      position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border: 2px dashed #f0ea62;
+                z-index: -1;
+  
+    }
+  

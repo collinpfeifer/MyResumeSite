@@ -1,5 +1,8 @@
 import React from 'react';
-import NavBar from './NavBar';
+// import {Grid} from '@material-ui/core';
+import NavBar from './Navbar';
+// import AboutMe from './AboutMe';
+
 /**
  * Main App component
  * @return {Component} App
@@ -13,3 +16,13 @@ export default function App() {
 }
 
 
+/**
+ * <Grid
+       direction="column"
+        className="main"
+      alignItems="center"
+    spacing={0}
+     >
+        <AboutMe />
+       </Grid> }
+ */
