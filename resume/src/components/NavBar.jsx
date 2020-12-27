@@ -5,49 +5,51 @@ import {faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
 import {faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import {faCube} from '@fortawesome/free-solid-svg-icons';
-import {Grid} from '@material-ui/core';
-import '../css/Navbar.css';
-
+import '../css/NavBar.scss';
 
 const NavBar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  // eslint-disable-next-line no-unused-vars
+  const [active, setActive] = useState(false);
 
-  const handleCollapse = () => setIsCollapsed(!isCollapsed);
+  /* const toggleActive = () => {
+    setActive(!active);
+  } */
 
+  const isActive = active ? 'active' : '';
   return (
-    <Grid container
-      justify="left"
-      spacing={0}
-      direction="column"
-      className="nav"
-      expanded={isCollapsed}
-      onToggle={handleCollapse}>
-      <div className="card">
-        <ul>
-          <li>
-            <FontAwesomeIcon
-              icon={faAddressCard} className='icon'
-            /><a href="#">About Me</a></li>
-          <li>
-            <FontAwesomeIcon
-              icon={faPhoneSquareAlt} className='icon'
-            /><a href="#">Contact Me</a></li>
-          <li>
-            <FontAwesomeIcon
-              icon={faProjectDiagram} className='icon'
-            /><a href="#">Projects</a></li>
-          <li>
-            <FontAwesomeIcon
-              icon={faBriefcase} className='icon'
-            /><a href="#">Experience</a></li>
-          <li>
-            <FontAwesomeIcon
-              icon={faCube} className='icon'
-            /><a href="#">Future</a></li>
-        </ul>
-      </div>
-    </Grid>
+    <>
+      <i
+        className='button fas fa-bars'
+        data-uk-toggle='target: #offcanvas-usage'
+      />
 
+      <div id='offcanvas-usage' data-uk-offcanvas='overlay:true'>
+        <div className='uk-offcanvas-bar'>
+          <ul>
+            <li className='active'>
+              <FontAwesomeIcon icon={faAddressCard} className='icon' />
+              <a href='#'>About Me</a>
+            </li>
+            <li className={isActive}>
+              <FontAwesomeIcon icon={faPhoneSquareAlt} className='icon' />
+              <a href='#'>Contact Me</a>
+            </li>
+            <li className={isActive}>
+              <FontAwesomeIcon icon={faProjectDiagram} className='icon' />
+              <a href='#'>Projects</a>
+            </li>
+            <li className={isActive}>
+              <FontAwesomeIcon icon={faBriefcase} className='icon' />
+              <a href='#'>Experience</a>
+            </li>
+            <li className={isActive}>
+              <FontAwesomeIcon icon={faCube} className='icon' />
+              <a href='#'>Future</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 };
 

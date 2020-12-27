@@ -5,19 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow:hidden;
+  overflow:scroll;
+  overflow-x: hidden;
+
+  width: 100%;
+  
+  background: rgb(18,18,150);
+  background: linear-gradient(0deg, rgba(18,18,150,1) 0%, rgba(219,15,44,1) 100%);
+
 }
+
+body::-webkit-scrollbar-track {
+background: transparent;
+} 
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    .appmain{
+      width:90%;
+    }
+}
+
+@media only screen 
+and (min-width : 1224px) {
+   .appmain{
+    width:80%
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 30%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
-.main{
-  width: 100%;
-    height: auto;
-    top: 0;
-    position: absolute;
-    background: rgb(18,18,150);
-  background: linear-gradient(0deg, rgba(18,18,150,1) 0%, rgba(219,15,44,1) 100%);
-}
