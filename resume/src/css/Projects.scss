@@ -1,89 +1,39 @@
-.projectmain{
-  height: 100vh;
-}
-* {
+$highlight: white;
+.project-main {
+  height: 130vh;
+  * {
     box-sizing: border-box;
   }
+}
 .card-container {
-  width: 18vw;
-  margin: 3vh;
-  height: 15vw;
+  width: 30%;
 
-  .card {
+  .project-card {
     font-weight: bold;
     position: relative;
-    width: 100%;
-    a {
-      padding: 10%;
-      width: 100%;
-      height: 25vw;
-      border: 2px solid black;
-      background: white;
-      text-decoration: none;
-      color: white;
-      display: block;
-      transition: 0.25s ease;
-      border-radius: 10%;
+    padding: 30px;
+    width: 20vw;
+    height: 400px;
+    border: 2px solid #333333;
+    background: black;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s ease;
+    z-index: 5;
 
-      &:hover {
-        transform: translate(-30px, -30px);
-
-        .card--display {
-          display: none;
-        }
-
-        .card--hover {
-          display: block;
-        }
+    .card-display {
+      i {
+        font-size: 60px;
       }
 
-      .card--display {
-        i {
-          font-size: 60px;
-          margin-top: 13vw;
-          color: black
-        }
-
-        h2 {
-            font-weight: bold;
-            font-family:'Andika New Basic';
-            font-size: 3vh;
-          margin: 20px 0 0;
-        }
+      h2 {
+        margin: 20px 0 0;
+        color: white;
       }
-
-      .card--hover {
-        display: none;
-
-        h2 {
-            font-weight: bold;
-            font-size: 3vh;
-          margin: 20px 0;
-        }
-
-        p {
-          font-weight: normal;
-          line-height: 1.5;
-          color: black;
-
-          &.link {
-            margin: 20px 0 0;
-            font-weight: bold;
-            color: purple;
-          }
-        }
-      }
-    }
-
-    .card--border {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      border: 0.3vh dashed gray;
-      z-index: -1;
-      border-radius: 10%;
     }
   }
 }

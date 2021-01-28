@@ -8,7 +8,7 @@
 }
 
 .terminal .top {
-  background: #e8e6e8;
+  background: #333333;
   color: black;
   padding: 5px;
   border-radius: 5px 5px 0 0;
@@ -35,7 +35,7 @@
 }
 
 .clear{
-    clear: both;
+  clear: both;
 }
 .red {
   background: #ec6a5f;

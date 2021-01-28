@@ -5,33 +5,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow:scroll;
+  overflow: scroll;
   overflow-x: hidden;
 
   width: 100%;
-  
-  background: rgb(18,18,150);
-  background: linear-gradient(0deg, rgba(18,18,150,1) 0%, rgba(219,15,44,1) 100%);
+  background: linear-gradient(-45deg, #5a189a, #7b2cbf, #9d4edd, #7b2cbf);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body::-webkit-scrollbar-track {
-background: transparent;
-} 
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-    .appmain{
-      width:90%;
-    }
+  background: #333;
 }
 
-@media only screen 
-and (min-width : 1224px) {
-   .appmain{
-    width:80%
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .appmain {
+    width: 90%;
   }
+}
+
+@media only screen and (min-width: 1224px) {
+  .appmain {
+    width: 80%;
+  }
+}
+
+.sectionHead {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10em;
 }
 
 ::-webkit-scrollbar {
@@ -46,12 +60,10 @@ and (min-width : 1224px) {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: black;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+    monospace;
 }
-

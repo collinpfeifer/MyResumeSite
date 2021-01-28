@@ -1,25 +1,10 @@
 .skillsmain{
-  height:100vh;
-  align-items: center;
-  margin: auto;
+  height:70vh;
 }
 
-*{}
-
-/* Wrapper */
-.wrapper {
-
-  text-align: center;
-}
-
-/* Badge */
 .badge {
-	margin: 1vw 2.5vw;
-	width: 6.4vw;
-	height: 6.4vw;
+  padding: 1.2vw;
 	border-radius: 20%;
-	display: inline-block;
-	top: 0;
 	transition: all 0.2s ease;
   box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
   cursor: pointer;
@@ -29,70 +14,17 @@
   width: 4.5vw;
 	height: 4.5vw;
   background: white;
-  position: absolute;
-  margin: 1vw 1vw auto;
   z-index: 10;
 	border-radius: 30%;
   box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
-  
+
   i.fab {
     font-size: 2.7vw;
 		margin-top: 1vw;
   }
 }
 
-/* Colors */
-.blue {
-    background: dodgerblue;
-    color: deepskyblue;
-}
-
-.orange {
-  background: darkorange;
-  color: orange;
-}
-
-.gold {
-  background: gold;
-  color: gold;
-}
-
-.red {
-  background: red;
-  color: red;
-}
-
-.purple {
-  background: mediumpurple;
-  color: slategray;
-}
-
-.green {
-  background: yellowgreen;
-  color: darkslategray;
-}
-
-.crimson {
-  background: crimson;
-  color: firebrick;
-}
-
-.steel {
-  background: steelblue;
-  color: gold;
-}
-
-.pink {
-  background: hotpink;
-  color: palevioletred;
-}
-
-.rebecca {
-  background: rebeccapurple;
-  color: rebeccapurple;
-}
-
-.gainsboro {
-  background: gainsboro;
-  color: orangered;
+.black{
+  color:black;
+  background:#333333;
 }

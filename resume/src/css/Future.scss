@@ -1,0 +1,81 @@
+[data-toggle="collapse"] i:before {  
+    content: "\f068";
+}
+  
+[data-toggle="collapse"].collapsed i:before {
+    content: "\f067";
+}
+
+#accordion {
+    .card-header{
+        background: black;
+    }
+    .accordion-title{
+        position: relative;
+        display: block;
+        padding:8px 0 8px 50px;
+        background: #333333;
+        overflow: hidden;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        text-align: left;
+        transition: all .4s ease-in-out; 
+        i{
+            position: absolute;
+            width: 40px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: #fff;
+            background: black;
+            text-align: center;
+            border-right: 1px solid transparent;
+        }
+        &:hover{
+            padding-left: 60px;
+            color: #fff;
+            
+            i {
+                border-right: 1px solid #fff;
+            }
+        }
+    }
+    .accordion-body{
+        padding: 40px 55px;
+
+        background: black;
+        ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        
+        li {
+            padding-left: 1.2rem;
+            text-indent: -1.2rem;
+
+            &:before {
+                content: "\f10a";
+                padding-right: 5px;
+                font-family: "Flaticon";
+                font-size: 16px;
+                font-style: normal;
+                color: #333333;
+            }
+        }
+    }
+}
+
+.question{
+background: white;
+border: 1px solid black;
+color: black;
+font-size: 3em;
+}
+
+.vr{
+    border-left: thick solid black 
+}

@@ -5,7 +5,7 @@ import {faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
 import {faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import {faCube} from '@fortawesome/free-solid-svg-icons';
-import '../css/NavBar.scss';
+import '../css/Navbar.scss';
 
 const NavBar = () => {
   // eslint-disable-next-line no-unused-vars
@@ -23,7 +23,9 @@ const NavBar = () => {
         data-uk-toggle='target: #offcanvas-usage'
       />
 
-      <div id='offcanvas-usage' data-uk-offcanvas='overlay:true'>
+      <div
+        id='offcanvas-usage'
+        data-uk-offcanvas='overlay:true'>
         <div className='uk-offcanvas-bar'>
           <ul>
             <li className='active'>

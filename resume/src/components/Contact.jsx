@@ -1,73 +1,45 @@
 import React from 'react';
-import '../css/Contact.css';
+import '../css/Contact.scss';
+
+const contacts = [
+  {
+    icon: 'fab fa-linkedin',
+    link: 'https://www.linkedin.com/in/collin-pfeifer-5b77831a7/',
+    user: 'Collin Pfeifer',
+    description: 'This is where I network and build my professional protfolio',
+  },
+  {
+    icon: 'fas fa-envelope',
+    link: 'https://www.linkedin.com/in/collin-pfeifer-5b77831a7/',
+    user: 'collinpfeifer@icloud.com',
+    description: 'This is where I network and build my professional protfolio',
+  },
+  {
+    icon: 'fab fa-github',
+    link: 'https://github.com/collinpfeifer',
+    user: 'collinpfeifer',
+    description: 'This is where I network and build my professional protfolio',
+  },
+];
 
 const Contact = () => {
-  return (
-    <div className='uk-flex uk-flex-center uk-flex-middle'>
-      <div class='card'>
-        <div class='face face1'>
-          <div class='content'>
-            <div class='icon'>
-              <i class='fa fa-linkedin-square' aria-hidden='true'></i>
-            </div>
-          </div>
+  const renderedContact = contacts.map((contact) => {
+    return (
+      <div className='contact-card'>
+        <div className='icon'>
+          <i className={`contact-icon ${contact.icon}`}></i>
         </div>
-        <div class='face face2'>
-          <div class='content'>
-            <h3>
-              <a
-                href='https://www.linkedin.com/in/adamdipinto/'
-                target='_blank'>
-                _adamdipinto
-              </a>
-            </h3>
-            <p>This is where I network and build my professional protfolio.</p>
-          </div>
+        <div className='contact-content'>
+          <h3>
+            <a href={contact.link}>{contact.user}</a>
+          </h3>
+          <p>{contact.description}</p>
         </div>
       </div>
-      <div class='card'>
-        <div class='face face1'>
-          <div class='content'>
-            <div class='icon'>
-              <i class='fa fa-twitter-square' aria-hidden='true'></i>
-            </div>
-          </div>
-        </div>
-        <div class='face face2'>
-          <div class='content'>
-            <h3>
-              <a href='https://twitter.com/AdamDipinto' target='_blank'>
-                @AdamDipinto
-              </a>
-            </h3>
-            <p>
-              This is where I read news and network with different social
-              groups.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class='card'>
-        <div class='face face1'>
-          <div class='content'>
-            <div class='icon'>
-              <i class='fa fa-github-square' aria-hidden='true'></i>
-            </div>
-          </div>
-        </div>
-        <div class='face face2'>
-          <div class='content'>
-            <h3>
-              <a href='https://github.com/atom888' target='_blank'>
-                atom888
-              </a>
-            </h3>
-            <p>This is where I share code and work on projects.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
+  });
+
+  return <div className='contact-container'>{renderedContact}</div>;
 };
 
 export default Contact;
