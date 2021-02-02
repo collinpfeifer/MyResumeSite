@@ -1,4 +1,6 @@
-
+.container{
+    height: 130vh;
+}
 
 .main-timeline {
     position: relative

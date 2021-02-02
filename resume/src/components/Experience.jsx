@@ -4,22 +4,26 @@ import '../css/Experience.css';
 const Experience = () => {
   return (
     <>
-      <h1 className='sectionHead'>Experience</h1>
-      <div class='container'>
-        <div class='main-timeline'>
-          <div class='timeline'>
-            <div class='icon'></div>
-            <div class='date-content'>
-              <div class='date-outer'>
-                <span class='date'>
-                  <span class='month'>2 Years</span>
-                  <span class='year'>2013</span>
+      <div className='container
+      uk-flex
+      uk-flex-center
+      uk-flex-column
+      uk-flex-middle'
+      >
+        <div className='main-timeline'>
+          <div className='timeline'>
+            <div className='icon'></div>
+            <div className='date-content'>
+              <div className='date-outer'>
+                <span className='date'>
+                  <span className='month'>2 Years</span>
+                  <span className='year'>2013</span>
                 </span>
               </div>
             </div>
-            <div class='timeline-content'>
-              <h5 class='title'>Visual Art &amp; Design</h5>
-              <p class='description'>
+            <div className='timeline-content'>
+              <h5 className='title'>Visual Art &amp; Design</h5>
+              <p className='description'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur ex sit amet massa scelerisque scelerisque. Aliquam
                 erat volutpat. Aenean interdum finibus efficitur. Praesent
@@ -28,19 +32,19 @@ const Experience = () => {
             </div>
           </div>
 
-          <div class='timeline'>
-            <div class='icon'></div>
-            <div class='date-content'>
-              <div class='date-outer'>
-                <span class='date'>
-                  <span class='month'>1 Years</span>
-                  <span class='year'>2015</span>
+          <div className='timeline'>
+            <div className='icon'></div>
+            <div className='date-content'>
+              <div className='date-outer'>
+                <span className='date'>
+                  <span className='month'>1 Years</span>
+                  <span className='year'>2015</span>
                 </span>
               </div>
             </div>
-            <div class='timeline-content'>
-              <h5 class='title'>Product Designer</h5>
-              <p class='description'>
+            <div className='timeline-content'>
+              <h5 className='title'>Product Designer</h5>
+              <p className='description'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur ex sit amet massa scelerisque scelerisque. Aliquam
                 erat volutpat. Aenean interdum finibus efficitur. Praesent
@@ -49,19 +53,19 @@ const Experience = () => {
             </div>
           </div>
 
-          <div class='timeline'>
-            <div class='icon'></div>
-            <div class='date-content'>
-              <div class='date-outer'>
-                <span class='date'>
-                  <span class='month'>2 Years</span>
-                  <span class='year'>2016</span>
+          <div className='timeline'>
+            <div className='icon'></div>
+            <div className='date-content'>
+              <div className='date-outer'>
+                <span className='date'>
+                  <span className='month'>2 Years</span>
+                  <span className='year'>2016</span>
                 </span>
               </div>
             </div>
-            <div class='timeline-content'>
-              <h5 class='title'>Web Designer</h5>
-              <p class='description'>
+            <div className='timeline-content'>
+              <h5 className='title'>Web Designer</h5>
+              <p className='description'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur ex sit amet massa scelerisque scelerisque. Aliquam
                 erat volutpat. Aenean interdum finibus efficitur. Praesent
@@ -70,19 +74,19 @@ const Experience = () => {
             </div>
           </div>
 
-          <div class='timeline'>
-            <div class='icon'></div>
-            <div class='date-content'>
-              <div class='date-outer'>
-                <span class='date'>
-                  <span class='month'>2 Years</span>
-                  <span class='year'>2018</span>
+          <div className='timeline'>
+            <div className='icon'></div>
+            <div className='date-content'>
+              <div className='date-outer'>
+                <span className='date'>
+                  <span className='month'>2 Years</span>
+                  <span className='year'>2018</span>
                 </span>
               </div>
             </div>
-            <div class='timeline-content'>
-              <h5 class='title'>Graphic Designer</h5>
-              <p class='description'>
+            <div className='timeline-content'>
+              <h5 className='title'>Graphic Designer</h5>
+              <p className='description'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur ex sit amet massa scelerisque scelerisque. Aliquam
                 erat volutpat. Aenean interdum finibus efficitur. Praesent
