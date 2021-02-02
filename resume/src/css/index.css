@@ -7,27 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: scroll;
   overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+ 
 
   width: 100%;
-  background: linear-gradient(-45deg, #5a189a, #7b2cbf, #9d4edd, #7b2cbf);
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
+  background: rgb(64, 0, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(64, 0, 126, 1) 0%,
+    rgba(90, 24, 154, 1) 25%,
+    rgba(123, 44, 191, 1) 50%,
+    rgba(157, 78, 221, 1) 75%
+  );
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+*{
+  box-sizing: border-box;
 }
 
-body::-webkit-scrollbar-track {
-  background: #333;
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -48,20 +49,6 @@ body::-webkit-scrollbar-track {
   font-size: 10em;
 }
 
-::-webkit-scrollbar {
-  width: 20px;
-  border-radius: 30%;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: black;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -6,7 +6,6 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
 // import Experience from './Experience';
-import Future from './Future';
 
 const projects = [
   {
@@ -65,7 +64,6 @@ const App = () => {
           <Projects projects={projects} />
           <Skills />
           <Contact />
-          <Future />
         </div>
       </div>
     </>
@@ -73,7 +71,3 @@ const App = () => {
 };
 
 export default App;
-
-// <Skills badges={badges} />
-//         <Experience />
-//          <Future/>
