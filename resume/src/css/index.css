@@ -10,20 +10,21 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none; 
  
-
-  width: 100%;
   background: rgb(64, 0, 126);
   background: linear-gradient(
     0deg,
-    rgba(64, 0, 126, 1) 0%,
+    rgb(64, 0, 126) 0%,
     rgba(90, 24, 154, 1) 25%,
     rgba(123, 44, 191, 1) 50%,
-    rgba(157, 78, 221, 1) 75%
+    rgb(157, 78, 221) 75%
   );
 }
 
 *{
   box-sizing: border-box;
+}
+.appmain{
+  width: 100%;
 }
 
 
@@ -32,11 +33,6 @@ body::-webkit-scrollbar {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  .appmain {
-    width: 90%;
-  }
-}
 
 @media only screen and (min-width: 1224px) {
   .appmain {
@@ -44,10 +40,6 @@ body::-webkit-scrollbar {
   }
 }
 
-.sectionHead {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 10em;
-}
 
 
 code {

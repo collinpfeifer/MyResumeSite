@@ -39,7 +39,11 @@ const Contact = () => {
     );
   });
 
-  return <div className='contact-container'>{renderedContact}</div>;
+  return (
+    <div className='contact-container uk-flex uk-flex-center'>
+      {renderedContact}
+    </div>
+  );
 };
 
 export default Contact;

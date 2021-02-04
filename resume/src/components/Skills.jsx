@@ -99,7 +99,8 @@ const Skills = () => {
     <>
       <div className='skillsmain uk-flex uk-flex-center uk-flex-middle'>
         <div
-          className='uk-grid uk-grid-column-large uk-gid-row-medium'
+          className='uk-grid uk-grid-medium'
+          style={{width: '40vw'}}
           data-uk-grid>
           {renderedBadges}
         </div>

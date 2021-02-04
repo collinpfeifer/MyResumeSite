@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 import React, {useState} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
-import {faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
-import {faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
-import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
-import {faCube} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
+// import {faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
+// import {faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
+// import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
+// import {faCube} from '@fortawesome/free-solid-svg-icons';
 import '../css/Navbar.scss';
 
 const NavBar = () => {
@@ -22,33 +23,42 @@ const NavBar = () => {
         className='button fas fa-bars'
         data-uk-toggle='target: #offcanvas-usage'
       />
-
-      <div
-        id='offcanvas-usage'
-        data-uk-offcanvas='overlay:true'>
+      <div id='offcanvas-usage' data-uk-offcanvas='mode:reveal; overlay:true;'>
         <div className='uk-offcanvas-bar'>
-          <ul>
-            <li className='active'>
-              <FontAwesomeIcon icon={faAddressCard} className='icon' />
-              <a href='#'>About Me</a>
-            </li>
-            <li className={isActive}>
-              <FontAwesomeIcon icon={faPhoneSquareAlt} className='icon' />
-              <a href='#'>Contact Me</a>
-            </li>
-            <li className={isActive}>
-              <FontAwesomeIcon icon={faProjectDiagram} className='icon' />
-              <a href='#'>Projects</a>
-            </li>
-            <li className={isActive}>
-              <FontAwesomeIcon icon={faBriefcase} className='icon' />
-              <a href='#'>Experience</a>
-            </li>
-            <li className={isActive}>
-              <FontAwesomeIcon icon={faCube} className='icon' />
-              <a href='#'>Future</a>
-            </li>
-          </ul>
+          <div className='navbarmain'>
+            <ul className='navbar-ul'>
+              <li className='navbar-li'>
+                {/* <FontAwesomeIcon icon={faAddressCard} className='icon' /> */}
+                <a href='#' className='navbar-a'>
+                  About Me
+                </a>
+              </li>
+              <li className={isActive} className='navbar-li'>
+                {/* <FontAwesomeIcon icon={faPhoneSquareAlt} className='icon' /> */}
+                <a href='#' className='navbar-a'>
+                  Contact Me
+                </a>
+              </li>
+              <li className={isActive} className='navbar-li'>
+                {/* <FontAwesomeIcon icon={faProjectDiagram} className='icon' /> */}
+                <a href='#' className='navbar-a'>
+                  Projects
+                </a>
+              </li>
+              <li className={isActive} className='navbar-li'>
+                {/* <FontAwesomeIcon icon={faBriefcase} className='icon' /> */}
+                <a href='#' className='navbar-a'>
+                  Experience
+                </a>
+              </li>
+              <li className={isActive} className='navbar-li'>
+                {/* <FontAwesomeIcon icon={faCube} className='icon' /> */}
+                <a href='#' className='navbar-a'>
+                  Future
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

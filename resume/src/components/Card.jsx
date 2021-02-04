@@ -1,57 +1,12 @@
 import React from 'react';
 import {motion, useMotionValue, useTransform} from 'framer-motion';
 import '../css/Card.css';
+import {projects} from '../projects.js';
 import {Icon, InlineIcon} from '@iconify/react';
 import reactIcon from '@iconify-icons/logos/react';
 import reduxIcon from '@iconify-icons/logos/redux';
 import githubFilled from '@iconify-icons/ant-design/github-filled';
 import fileTypeNode from '@iconify-icons/vscode-icons/file-type-node';
-
-
-const projects = [
-  {
-    title: 'hello friend',
-    icon: 'fas fa-address-book',
-    link: 'https://github.com',
-    description: 'this is my project lol',
-    id: 1,
-  },
-  {
-    title: 'Recluse Stream',
-    icon: 'fas fa-spider',
-    link: 'https://github.com',
-    description: 'this is my project lol',
-    id: 2,
-  },
-  {
-    title: 'My project2',
-    icon: 'fad fa-abacus',
-    link: 'https://github.com',
-    description: 'this is my project lol',
-    id: 3,
-  },
-  {
-    title: 'My project3',
-    icon: 'fad fa-abacus',
-    link: 'https://github.com',
-    description: 'this is my project lol',
-    id: 4,
-  },
-  {
-    title: 'My project4',
-    icon: 'fad fa-abacus',
-    link: 'https://github.com',
-    description: 'this is my project lol',
-    id: 5,
-  },
-  {
-    title: 'My project5',
-    icon: 'fad fa-abacus',
-    link: 'https://github.com',
-    description: 'this is my project lol',
-    id: 6,
-  },
-];
 
 const Card = (props) => {
   const x = useMotionValue(0);
@@ -74,13 +29,12 @@ const Card = (props) => {
   return (
     <motion.div
       style={{
-        width: '25%',
-        height: '25%',
         position: 'absolute',
         x: x,
         rotate: rotate,
         cursor: 'grab',
       }}
+      id='card'
       whileTap={{cursor: 'grabbing'}}
       drag={props.drag}
       dragConstraints={{
@@ -101,14 +55,13 @@ const Card = (props) => {
       }}>
       <motion.div
         style={{
-          width: 400,
-          height: 400,
           backgroundColor: '#000',
           borderRadius: 30,
           scale: scale,
           color: 'white',
         }}
-        className='uk-flex uk-flex-column uk-flex uk-flex-wrap-middle'>
+        id='card'
+        className='uk-flex uk-flex-column uk-flex-center'>
         <motion.a style={{color: 'white'}} href={projects[props.pIndex].link}>
           <InlineIcon
             icon={githubFilled}

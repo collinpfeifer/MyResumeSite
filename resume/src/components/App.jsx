@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Navbar from './Navbar';
-import AboutMe from './AboutMe';
+import Welcome from './Welcome';
 import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
@@ -15,7 +15,7 @@ const App = () => {
       <Navbar />
       <div className='uk-flex uk-flex-column uk-flex-wrap uk-flex-wrap-middle'>
         <div className='appmain'>
-          <AboutMe />
+          <Welcome />
           <Projects />
           <Skills />
           <Experience />

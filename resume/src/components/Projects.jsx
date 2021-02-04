@@ -1,5 +1,4 @@
 import React, {useState, useRef, useEffect} from 'react';
-import '../css/Projects.scss';
 import {AnimatePresence} from 'framer-motion';
 import Card from './Card';
 import BounceArrow from './BounceArrow';

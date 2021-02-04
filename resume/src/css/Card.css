@@ -1,7 +1,12 @@
-hr{
+hr {
   width: 80%;
   background-color: white;
   margin: auto;
+}
+
+#card{
+  width: 60vw;
+  height: 60vh;
 }
 
 .refresh {
@@ -90,4 +95,10 @@ ul {
   display: inline;
   margin: 0.6rem;
   word-wrap: nowrap;
+}
+
+@media only screen and (min-width: 1300px) {
+  #card{
+    width: 35vw;
+  }
 }

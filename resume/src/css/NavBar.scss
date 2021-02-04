@@ -1,53 +1,51 @@
-.button{
+.button {
   z-index: 10;
-  font-size: 4vw;
-  float:left;
+  font-size: 4rem;
+  float: left;
   padding: 0.28em;
   cursor: pointer;
   position: absolute;
 }
-.navbar{
-  background-color: black;
-}
-
-ul{
+.navbar-ul {
   list-style: none;
-  li {
-    position: relative;
-    margin: 2.8em 0;
+  position: relative;
 
-    a {
+  .navbar-li {
+    position: relative;
+    margin: 2.8rem 0;
+    .navbar-a {
       line-height: 5em;
       text-transform: uppercase;
-      text-decoration: none !important; 
+      text-decoration: none !important;
       letter-spacing: 0.4em;
-      color: rgba(#FFF, 0.35);
+      color: rgba(#fff, 0.35);
       display: block;
       transition: all ease-out 300ms;
     }
-    
+
     &.active a {
       color: white;
       text-decoration: none;
     }
-    
+
     &:not(.active)::after {
       opacity: 0.2;
     }
-    
+
     &:not(.active):hover a {
-      color: rgba(#FFF, 0.75);
+      color: rgba(#fff, 0.75);
     }
-    
+
     &::after {
       content: '';
       position: absolute;
-      width: 100%;
-      height: 0.2em;
+      width: 12rem;
+      height: 0.3rem;
       background: black;
+      top: 4.5rem;
       left: 0;
       bottom: 0;
-      background-image: linear-gradient(to right, #e01919, #2d12c5)
+      background-image: linear-gradient(to right, #5e42a6, #b74e91);
     }
   }
 }

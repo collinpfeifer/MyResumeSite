@@ -1,7 +1,7 @@
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable max-len */
 import React, {useEffect} from 'react';
-import '../css/AboutMe.css';
+import '../css/Welcome.css';
 import Typed from 'typed.js';
 import Self from '../self.jpg';
 import BounceArrow from './BounceArrow';
@@ -25,12 +25,13 @@ const AboutMe = () => {
       typed.destroy();
     };
   }, []);
+  
   return (
     <div
       className='aboutmain uk-flex
     uk-flex-center uk-flex-middle uk-flex-column'>
       <img src={Self} alt='self' style={{border: '3px black solid'}} />
-      <h1>
+      <h1 className='welcome-h1'>
         <span role='img' aria-label='wave'>
           👋{' '}
         </span>
