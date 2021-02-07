@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
 import Experience from './Experience';
+import AboutMe from './AboutMe';
 
 // eslint-disable-next-line no-unused-vars
 
@@ -16,6 +17,7 @@ const App = () => {
       <div className='uk-flex uk-flex-column uk-flex-wrap uk-flex-wrap-middle'>
         <div className='appmain'>
           <Welcome />
+          <AboutMe />
           <Projects />
           <Skills />
           <Experience />

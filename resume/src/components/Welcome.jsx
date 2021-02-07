@@ -20,17 +20,22 @@ const AboutMe = () => {
       backSpeed: 0,
       showCursor: false,
     };
-    const typed = new Typed('#abouttype', options);
+    const typed = new Typed('#welcometype', options);
     return () => {
       typed.destroy();
     };
   }, []);
-  
+
   return (
     <div
       className='aboutmain uk-flex
     uk-flex-center uk-flex-middle uk-flex-column'>
-      <img src={Self} alt='self' style={{border: '3px black solid'}} />
+      <img
+        src={Self}
+        alt='self'
+        style={{border: '3px black solid'}}
+        className='self'
+      />
       <h1 className='welcome-h1'>
         <span role='img' aria-label='wave'>
           👋{' '}
@@ -38,15 +43,10 @@ const AboutMe = () => {
         Hi! I'm Collin Pfeifer
       </h1>
       <div style={{textAlign: 'center', height: '1%'}}>
-        <span id='abouttype'>
-          {/* . <br />I live in Indiana and a couple hobbies
-          include reading, poker, chess, and cooking. <br />I
-          love discussing deep and theoretical ideas in topics ranging from
-          philisophy or psychology to politics and am a big fan of modern stoics
-          and altrusits like E.O. Scott and Rabbi Yehuda Ashlag.  */}
+        <span id='welcometype'>
         </span>
       </div>
-      <BounceArrow direction='down'/>
+      <BounceArrow direction='down' />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import '../css/Contact.scss';
 
@@ -9,16 +10,18 @@ const contacts = [
     description: 'This is where I network and build my professional protfolio',
   },
   {
-    icon: 'fas fa-envelope',
-    link: 'https://www.linkedin.com/in/collin-pfeifer-5b77831a7/',
-    user: 'collinpfeifer@icloud.com',
-    description: 'This is where I network and build my professional protfolio',
-  },
-  {
     icon: 'fab fa-github',
     link: 'https://github.com/collinpfeifer',
     user: 'collinpfeifer',
-    description: 'This is where I network and build my professional protfolio',
+    description:
+      'This is where I display my code for personal or work purposes',
+  },
+  {
+    icon: 'fas fa-book',
+    link: 'https://bookshelf.website/collinpfeifer',
+    user: 'collinpfeifer',
+    description:
+      'My own bookshelf to see what I\'ve been recently reading and for reccomendations',
   },
 ];
 
@@ -40,8 +43,34 @@ const Contact = () => {
   });
 
   return (
-    <div className='contact-container uk-flex uk-flex-center'>
-      {renderedContact}
+    <div
+      className='uk-flex uk-flex-center uk-flex-middle uk-flex-column'
+      styler={{height: '100vh'}}>
+      <div className='contact-container uk-flex uk-flex-wrap uk-flex-center'>
+        {renderedContact}
+      </div>
+      <form style={{width: '80%', margin: '7rem', color: 'white'}}>
+        <fieldset className='uk-fieldset'>
+          <legend className='uk-legend'>Contact Me</legend>
+        </fieldset>
+        <div className='uk-margin'>
+          <input className='uk-input' type='text' placeholder='Name' />
+        </div>
+        <div className='uk-margin'>
+          <input className='uk-input' type='text' placeholder='Email Address' />
+        </div>
+        <div className='uk-margin'>
+          <textarea
+            className='uk-textarea'
+            rows='5'
+            placeholder='Message'></textarea>
+        </div>
+        <button
+          className='uk-button uk-button-default'
+          style={{background: 'white'}}>
+          Submit
+        </button>
+      </form>
     </div>
   );
 };

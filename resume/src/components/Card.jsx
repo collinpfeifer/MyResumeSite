@@ -3,10 +3,8 @@ import {motion, useMotionValue, useTransform} from 'framer-motion';
 import '../css/Card.css';
 import {projects} from '../projects.js';
 import {Icon, InlineIcon} from '@iconify/react';
-import reactIcon from '@iconify-icons/logos/react';
-import reduxIcon from '@iconify-icons/logos/redux';
 import githubFilled from '@iconify-icons/ant-design/github-filled';
-import fileTypeNode from '@iconify-icons/vscode-icons/file-type-node';
+
 
 const Card = (props) => {
   const x = useMotionValue(0);
@@ -78,18 +76,13 @@ const Card = (props) => {
         <motion.div className='langs'>
           <motion.div className='box3'>
             <motion.div className='langs-icons'>
-              <Icon
-                icon={reactIcon}
-                width='3.5rem'
-                style={{margin: '5%'}}/>
-              <Icon
-                icon={reduxIcon}
-                width='3.5rem'
-                style={{margin: '5%'}}/>
-              <Icon
-                icon={fileTypeNode}
-                width='3.5rem'
-                style={{margin: '5%'}}/>
+              {projects[props.pIndex].icons.map((icon) => {
+                return (<Icon
+                  icon={icon}
+                  width='40'
+                  style={{margin: '0.5rem'}}
+                />);
+              })}
             </motion.div>
           </motion.div>
         </motion.div>

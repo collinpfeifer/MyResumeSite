@@ -27,12 +27,12 @@
     height:100vh;
 }
 
-#abouttype{
+#welcometype{
     color: white;
     font-size:3vh;
 }
 
-img{
+.self{
     border-radius: 50%;
     width:17vh;
     margin-bottom: 3%;
