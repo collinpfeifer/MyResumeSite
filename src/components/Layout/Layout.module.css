@@ -1,0 +1,6 @@
+.container{
+    min-height: 100vh;
+}
+.content{
+    flex-grow: 1;
+}
