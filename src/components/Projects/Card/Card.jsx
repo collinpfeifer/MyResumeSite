@@ -109,70 +109,33 @@ const Card = (props) => {
         </motion.div>
         <motion.div className='box4'>
           <motion.span className='progress'>
-            <motion.span
-              className='progress-item'
-              style={{
-                backgroundColor: '#f7df1e',
-                width: '66.67%',
-              }}></motion.span>
-            <motion.span
-              className='progress-item'
-              style={{backgroundColor: 'orange', width: '10%'}}></motion.span>
-            <motion.span
-              className='progress-item'
-              style={{
-                backgroundColor: 'lightblue',
-                width: '20%',
-              }}></motion.span>
-            <motion.span
-              className='progress-item'
-              style={{
-                backgroundColor: 'purple',
-                width: '3.33%',
-              }}></motion.span>
+            {projects[props.pIndex].progress.map((item) => {
+              return (<motion.span
+                className="progress-item"
+                style={{
+                  backgroundColor: `${item.color}`,
+                  width: `${item.percent}%`,
+                }}
+              ></motion.span>);
+            })}
           </motion.span>
           <motion.ul
             style={{listStyle: 'none', margin: 'auto', marginTop: '5%'}}>
-            <motion.li className='inline'>
-              <motion.div className='name'>
-                <motion.svg
-                  className='oct'
-                  style={{backgroundColor: '#f7df1e'}}
-                  width='8'
-                  height='8'></motion.svg>
-                <motion.span>JavaScript 66.67%</motion.span>
-              </motion.div>
-            </motion.li>
-            <motion.li className='inline'>
-              <motion.div className='name'>
-                <motion.svg
-                  className='oct'
-                  style={{backgroundColor: 'orange'}}
-                  width='8'
-                  height='8'></motion.svg>
-                <motion.span>HTML 20%</motion.span>
-              </motion.div>
-            </motion.li>
-            <motion.li className='inline'>
-              <motion.div className='name'>
-                <motion.svg
-                  className='oct'
-                  style={{backgroundColor: 'lightblue'}}
-                  width='8'
-                  height='8'></motion.svg>
-                <motion.span>CSS 5%</motion.span>
-              </motion.div>
-            </motion.li>
-            <motion.li className='inline'>
-              <motion.div className='name'>
-                <motion.svg
-                  className='oct'
-                  style={{backgroundColor: 'purple'}}
-                  width='8'
-                  height='8'></motion.svg>
-                <motion.span>PHP 3%</motion.span>
-              </motion.div>
-            </motion.li>
+            {projects[props.pIndex].progress.map((item) => {
+              return (
+                <motion.li className="inline">
+                  <motion.div className="name">
+                    <motion.svg
+                      className="oct"
+                      style={{backgroundColor: `${item.color}`}}
+                      width="8"
+                      height="8"
+                    ></motion.svg>
+                    <motion.span>{`${item.lang} ${item.percent}%`}</motion.span>
+                  </motion.div>
+                </motion.li>
+              );
+            })}
           </motion.ul>
         </motion.div>
       </motion.div>

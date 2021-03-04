@@ -5,8 +5,8 @@ hr {
 }
 
 #card {
-  width: 60vw;
-  height: 60vh;
+  width: 75vw;
+  height: 75vh;
 }
 
 .refresh {
@@ -100,5 +100,6 @@ ul {
 @media only screen and (min-width: 1300px) {
   #card {
     width: 35vw;
+    height: 30vh;
   }
 }

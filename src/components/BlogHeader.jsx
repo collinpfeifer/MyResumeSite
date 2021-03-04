@@ -7,7 +7,7 @@ const BlogHeader = () => {
     <div>
       <Link to="/blog">
         <i
-          className="button fas fa-paper-plane"
+          className="button fas fa-newspaper"
           style={{right: '0', textDecoration: 'none', color: 'black'}}
         />
       </Link>

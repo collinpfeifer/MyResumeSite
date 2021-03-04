@@ -5,6 +5,7 @@ import './Skills.scss';
 import '../../css/Typed.css';
 import {badges} from './badges';
 import Fade from 'react-reveal/Fade';
+import {Icon} from '@iconify/react';
 
 const Skills = () => {
   const [typedText, setTypedText] = useState('$ Select a skill');
@@ -27,7 +28,7 @@ const Skills = () => {
           onClick={() => setTypedText(badge.description)}
           className='badge black'>
           <div className='rounded'>
-            <i className={badge.font} />
+            <Icon icon={badge.font} width={badge.size} style={{margin: '0.25rem auto'}}/>
           </div>
         </article>
       </div>

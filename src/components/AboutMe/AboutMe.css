@@ -2,13 +2,18 @@
   height: 100vh;
 }
 
+.wrapper{
+    grid-template-columns: 10rem 10rem 15rem;
+  }
+
+
 .about-h2 {
   color: white;
 }
 .wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 10rem 10rem 15rem;
+  grid-template-columns: 10rem 10rem 13rem;
   color: white;
 }
 
@@ -39,11 +44,11 @@
   background: rgba(123, 44, 191, 1);
 }
 
-@media only screen and (min-width: 640px) {
-  .wrapper {
-    grid-template-columns: 25rem 25rem 20rem;
-  }
+@media only screen and (min-width: 40rem) {
   .box {
     font-size: 150%;
+  }
+  .wrapper {
+    grid-template-columns: 25rem 25rem 20rem;
   }
 }

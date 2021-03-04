@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import './Contact.scss';
 import Fade from 'react-reveal/Fade';
@@ -64,8 +65,8 @@ const Contact = () => {
 
   return (
     <div
-      className='uk-flex uk-flex-center uk-flex-middle uk-flex-column'
-      style={{height: '100vh'}}>
+      className='contact-main uk-flex uk-flex-center uk-flex-middle uk-flex-column'
+    >
       <Fade top>
         <div className='contact-container uk-flex uk-flex-wrap uk-flex-center'>
           {renderedContact}

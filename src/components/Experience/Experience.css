@@ -1,5 +1,5 @@
 .container {
-  height: 160vh;
+  height: 260vh;
 }
 
 .main-timeline {
@@ -251,4 +251,10 @@
   .main-timeline .title {
     margin-bottom: 10px;
   }
+}
+
+@media only screen and (min-width: 40rem){
+  .container {
+  height: 160vh;
+}
 }

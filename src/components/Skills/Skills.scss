@@ -3,7 +3,7 @@
 }
 
 .badge {
-  padding: 3rem;
+  padding: 6rem;
   border-radius: 20%;
   transition: all 0.2s ease;
   box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
@@ -11,8 +11,8 @@
 }
 
 .rounded {
-  width: 5.5vw;
-  height: 5vh;
+  width: 6vw;
+  height: 6vh;
   background: white;
   z-index: 10;
   border-radius: 30%;
@@ -29,10 +29,12 @@
   background: #333333;
 }
 
-@media only screen and (min-width: 40rem){
-  .rounded{
-    height: 9vh;
-    width: 5vw;
+@media only screen and (min-width: 40rem) {
+  .rounded {
+    height: 10vh;
+    width: 10vw;
   }
-
+  .badge {
+    padding: 3rem;
+  }
 }

@@ -7,7 +7,7 @@ const IndexHeader = () => {
     <div>
       <Navbar />
       <Link to="/blog">
-        <i className="button fas fa-paper-plane" style={{right: '0'}} />
+        <i className="button fas fa-newspaper" style={{right: '0'}} />
       </Link>
     </div>
   );

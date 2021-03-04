@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import {AnimatePresence} from 'framer-motion';
-import Card from '../Card/Card';
+import Card from './Card/Card';
 import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
