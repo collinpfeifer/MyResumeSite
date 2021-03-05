@@ -112,6 +112,7 @@ const Card = (props) => {
             {projects[props.pIndex].progress.map((item) => {
               return (<motion.span
                 className="progress-item"
+                key={item.percent}
                 style={{
                   backgroundColor: `${item.color}`,
                   width: `${item.percent}%`,

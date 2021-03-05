@@ -23,12 +23,12 @@ const Skills = () => {
 
   const renderedBadges = badges.map((badge) => {
     return (
-      <div key={badge.font}>
+      <div key={badge.description}>
         <article
           onClick={() => setTypedText(badge.description)}
           className='badge black'>
           <div className='rounded'>
-            <Icon icon={badge.font} width={badge.size} style={{margin: '0.25rem auto'}}/>
+            <Icon icon={badge.font} id='icon' width={badge.size} />
           </div>
         </article>
       </div>
@@ -37,7 +37,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className='skillsmain uk-flex uk-flex-center uk-flex-middle'>
+      <div className='skillsmain uk-flex uk-flex-center uk-flex-middle' id='skills'>
         <Fade top>
           <div
             className='uk-grid uk-grid-medium'

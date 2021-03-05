@@ -9,10 +9,10 @@ import {contacts} from './contacts';
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
-    init(process.env.REACT_APP_MAIL_ID);
+    init(process.env.GATSBY_MAIL_ID);
     emailjs.sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.GATSBY_SERVICE_ID,
+        process.env.GATSBY_TEMPLATE_ID,
         '#contact_email').then((res) => {
       console.log('SUCCESS!', res.status, res.text);
       store.addNotification({
@@ -66,6 +66,7 @@ const Contact = () => {
   return (
     <div
       className='contact-main uk-flex uk-flex-center uk-flex-middle uk-flex-column'
+      id='contactme'
     >
       <Fade top>
         <div className='contact-container uk-flex uk-flex-wrap uk-flex-center'>
@@ -75,7 +76,7 @@ const Contact = () => {
       <Fade bottom>
         <form
           style={{width: '80%', margin: '7rem', color: 'white'}}
-          id='contact_email'>
+          id='contact_email' onSubmit={(e)=> sendEmail(e)}>
           <fieldset className='uk-fieldset'>
             <legend className='uk-legend'>Contact Me</legend>
           </fieldset>
@@ -83,6 +84,7 @@ const Contact = () => {
             <input
               className='uk-input'
               type='text'
+              id='name'
               placeholder='Name'
               name='from_name'
               required
@@ -92,6 +94,7 @@ const Contact = () => {
             <input
               className='uk-input'
               type='email'
+              id='email'
               placeholder='Email Address'
               name='reply_to'
               required
@@ -101,6 +104,7 @@ const Contact = () => {
             <textarea
               className='uk-textarea'
               rows='5'
+              id='message'
               name='message'
               placeholder='Message'
               required></textarea>
@@ -108,8 +112,7 @@ const Contact = () => {
           <button
             className='uk-button uk-button-default'
             type='submit'
-            style={{background: 'white'}}
-            onClick={(e) => sendEmail(e)}>
+            style={{background: 'white'}}>
             Submit
           </button>
         </form>

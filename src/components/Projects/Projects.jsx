@@ -23,7 +23,9 @@ const Projects = () => {
     <Fade>
       <div
         className='uk-flex uk-flex-center uk-flex-middle'
-        style={{height: '130vh'}}>
+        style={{height: '130vh'}}
+        id='projects'
+      >
         <AnimatePresence initial={false}>
           <Card
             key={index + 1}

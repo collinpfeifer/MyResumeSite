@@ -97,9 +97,9 @@ ul {
   word-wrap: nowrap;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 40rem) {
   #card {
     width: 35vw;
-    height: 30vh;
+    height: 60vh;
   }
 }

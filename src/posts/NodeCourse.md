@@ -5,7 +5,7 @@ date: "2020-12-25"
 
 ## Complete Node Developer Course
 
-![desert](./node.jpg)
+![desert](./images/node.jpg)
 
 I just finished the complete Node.js developer course by Andrew Mead and It is again one of the best courses I have taken! It was a challenging time deciding which Node course to choose, but after going through Andrew’s I know I chose the right one.
 

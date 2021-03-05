@@ -1,61 +1,56 @@
 /* eslint-disable max-len */
-import React, {useState} from 'react';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
 import {faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
 import {faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import {faCube} from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-scroll';
 import './Navbar.scss';
 
 const NavBar = () => {
   // eslint-disable-next-line no-unused-vars
-  const [active, setActive] = useState(false);
 
-  /* const toggleActive = () => {
-    setActive(!active);
-  } */
-
-  const isActive = active ? 'active' : '';
   return (
     <>
       <i
-        className='button fas fa-bars'
-        data-uk-toggle='target: #offcanvas-usage'
+        className="button fas fa-bars"
+        data-uk-toggle="target: #offcanvas-usage"
       />
-      <div id='offcanvas-usage' data-uk-offcanvas='mode:reveal; overlay:true;'>
-        <div className='uk-offcanvas-bar'>
-          <div className='navbarmain'>
-            <ul className='navbar-ul'>
-              <li className='navbar-li'>
-                <FontAwesomeIcon icon={faAddressCard} className='icon' />
-                <a href='#' className='navbar-a'>
+      <div id="offcanvas-usage" data-uk-offcanvas="mode:reveal; overlay:true;">
+        <div className="uk-offcanvas-bar">
+          <div className="navbarmain">
+            <ul className="navbar-ul">
+              <li className="navbar-li">
+                <FontAwesomeIcon icon={faAddressCard} className="icon" />
+                <Link to="aboutme" className="navbar-a">
                   About Me
-                </a>
+                </Link>
               </li>
-              <li className={isActive} className='navbar-li'>
-                <FontAwesomeIcon icon={faPhoneSquareAlt} className='icon' />
-                <a href='#' className='navbar-a'>
-                  Contact Me
-                </a>
-              </li>
-              <li className={isActive} className='navbar-li'>
-                <FontAwesomeIcon icon={faProjectDiagram} className='icon' />
-                <a href='#' className='navbar-a'>
+              <li className="navbar-li">
+                <FontAwesomeIcon icon={faCube} className="icon" />
+                <Link to="projects" className="navbar-a">
                   Projects
-                </a>
+                </Link>
               </li>
-              <li className={isActive} className='navbar-li'>
-                <FontAwesomeIcon icon={faBriefcase} className='icon' />
-                <a href='#' className='navbar-a'>
+              <li className="navbar-li">
+                <FontAwesomeIcon icon={faProjectDiagram} className="icon" />
+                <Link to="skills" className="navbar-a">
+                  Skills
+                </Link>
+              </li>
+              <li className="navbar-li">
+                <FontAwesomeIcon icon={faBriefcase} className="icon" />
+                <Link to="experience" className="navbar-a">
                   Experience
-                </a>
+                </Link>
               </li>
-              <li className={isActive} className='navbar-li'>
-                <FontAwesomeIcon icon={faCube} className='icon' />
-                <a href='#' className='navbar-a'>
-                  Future
-                </a>
+              <li className="navbar-li">
+                <FontAwesomeIcon icon={faPhoneSquareAlt} className="icon" />
+                <Link to="contactme" className="navbar-a">
+                  Contact Me
+                </Link>
               </li>
             </ul>
           </div>

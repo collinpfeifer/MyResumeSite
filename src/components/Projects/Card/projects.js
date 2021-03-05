@@ -12,6 +12,8 @@ import bootstrapIcon from '@iconify-icons/logos/bootstrap';
 import apollostackIcon from '@iconify-icons/logos/apollostack';
 import mysqlIcon from '@iconify-icons/logos/mysql';
 import materialUi from '@iconify-icons/logos/material-ui';
+import uikitIcon from '@iconify-icons/logos/uikit';
+
 
 export const projects = [
   {
@@ -131,7 +133,7 @@ export const projects = [
       nextJs,
     ],
     link: 'https://github.com',
-    description: 'this is my project lol',
+    description: 'An app for bettering yourself by keeping habits and helping yourself grow. The habits are recorded in a Next.js UI interface and in a MySQL database',
     progress: [
       {
         lang: 'TypeScript',
@@ -147,9 +149,9 @@ export const projects = [
   },
   {
     title: 'Resume Site',
-    icons: [gatsbyIcon, reactIcon, bootstrapIcon],
+    icons: [gatsbyIcon, reactIcon, bootstrapIcon, uikitIcon],
     link: 'https://github.com/collinpfeifer/myResumeSite',
-    description: 'My personal website,',
+    description: 'My personal website, made with React, Gatsby for SSR, and BootStrap and UiKit for styling.',
     progress: [
       {
         lang: 'JavaScript',

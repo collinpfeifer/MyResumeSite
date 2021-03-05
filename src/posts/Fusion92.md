@@ -5,7 +5,7 @@ date: "2020-11-04"
 
 ## Fusion 92 Internship
 
-![red car](./fusion92.jpg)
+![red car](./images/fusion92.jpg)
 
 Unexpectedly, but amazingly, I was able to receive another internship offer through the digital marketing company Fusion 92 for their role of Software Engineer Intern. My roles will include automation testing, Azure Dev Ops and full stack web development with Vue.js and Node.js.
 

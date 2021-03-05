@@ -56,13 +56,16 @@
   font-family: 'Ubuntu Mono', monospace;
   padding: 8px;
   overflow: auto;
+  font-size: 0.8rem;
   width: 47vw;
   height: 45vh;
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (min-width: 40rem){
   .typed{
-    font-size: 0.8rem;
+    width: 40vw;
+    height: 45vh;
+    font-size: 1rem;
   }
 }
 

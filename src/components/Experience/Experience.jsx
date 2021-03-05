@@ -11,6 +11,7 @@ const Experience = () => {
       uk-flex-center
       uk-flex-column
       uk-flex-middle"
+        id='experience'
       >
         <div className="main-timeline">
           <div className="timeline">

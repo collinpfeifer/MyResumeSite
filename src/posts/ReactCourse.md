@@ -5,7 +5,7 @@ date: "2020-12-14"
 
 ## Modern React Redux Course
 
-![bee](./react.jpg)
+![bee](./images/react.jpg)
 
 I just finished the react redux complete course by Stephen Grider and It is 10/10! It was an amazing experience all around and such a well thought out course.
 

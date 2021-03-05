@@ -5,7 +5,7 @@ date: "2021-01-15"
 
 ## Advanced Intelligence Services Inc. Update
 
-![red car](./aisupdate.jpg)
+![red car](./images/aisupdate.jpg)
 
 I have been working at Advanced Intelligence Services Inc. as a web development intern for about 3 months now and it has allowed me to grow throughout my interpersonal skills along with my development skills. I have been able to grow through my use of Node, Express and Material UI to better grow my full stack development skills.
 

@@ -53,6 +53,7 @@
     "react-helmet": "^6.1.0",
     "react-notifications-component": "^3.0.3",
     "react-reveal": "^1.2.2",
+    "react-scroll": "^1.8.1",
     "react-typed": "^1.2.0",
     "sass": "^1.32.8",
     "typed.js": "^2.0.11",

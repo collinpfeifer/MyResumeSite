@@ -11,6 +11,7 @@ const AboutMe = () => {
       uk-flex-center
       uk-flex-column
       uk-flex-middle"
+      id='aboutme'
     >
       <div className="wrapper">
         <div className="box a">

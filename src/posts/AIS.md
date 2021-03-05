@@ -5,7 +5,7 @@ date: "2020-10-15"
 
 ## Advanced Intelligence Services Inc. Internship
 
-![solar panels](./ais.jpg)
+![solar panels](./images/ais.jpg)
 
 I have been working at Advanced Intelligence Services Inc. as a web development intern for about 3 months now and it has allowed me to grow throughout my interpersonal skills along with my development skills.
 
