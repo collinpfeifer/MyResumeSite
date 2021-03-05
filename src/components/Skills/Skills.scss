@@ -1,8 +1,9 @@
 .skillsmain {
-  height: 70vh;
+  height: 100vh;
+  
 }
 .skillsblock{
-  width: 45vw;
+  width: 100%;
 }
 
 .badge {
@@ -21,10 +22,6 @@
   border-radius: 30%;
   box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
 }
-#icon {
-  margin: auto;
-  padding: 0.25rem;
-}
 
 .black {
   color: black;
@@ -32,11 +29,15 @@
 }
 
 @media only screen and (min-width: 40rem) {
+
+  .skillsmain{
+    height: 70vh;
+  }
   .rounded {
     height: 8.5vh;
     width: 5vw;
   }
-  #icon{
-    margin-top: 0.4rem;
+  .skillsblock{
+    width: 45%
   }
 }

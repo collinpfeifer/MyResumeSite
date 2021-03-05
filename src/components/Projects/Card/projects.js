@@ -79,7 +79,7 @@ export const projects = [
     icons: [reactIcon, reduxIcon, fileTypeNode],
     link: 'https://github.com/collinpfeifer/RecluseStream',
     description:
-      'Recluse Stream is a web app made for streaming video to anyone. With Google Auth authentication for easy account creation and integration with popular streaming service OBS, Recluse Stream allows for easy, instant streaming with no hassle.',
+      'Recluse Stream is a web app made for easily streaming video to anyone. With Google Auth authentication for easy account creation and integration with popular streaming service OBS.',
     progress: [
       {
         lang: 'JavaScript',
