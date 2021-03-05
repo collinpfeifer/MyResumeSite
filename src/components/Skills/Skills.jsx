@@ -40,8 +40,7 @@ const Skills = () => {
       <div className='skillsmain uk-flex uk-flex-center uk-flex-middle' id='skills'>
         <Fade top>
           <div
-            className='uk-grid uk-grid-medium'
-            style={{width: '40vw'}}
+            className='skillsblock uk-grid uk-grid-medium'
             data-uk-grid>
             {renderedBadges}
           </div>

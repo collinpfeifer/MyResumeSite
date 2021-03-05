@@ -4,7 +4,7 @@
     position: relative;
     .contact-card {
       position: relative;
-      width: 24rem;
+      width: 20rem;
       height: 15rem;
       margin: 15px;
       overflow: hidden;
@@ -76,10 +76,11 @@
 }
 @media only screen and (min-width: 40rem) {
   .contact-main {
-    height: 110vh;
+    height: 140%;
   }
   .contact-card {
     width: 24.5vw;
     height: 27vh;
   }
 }
+
