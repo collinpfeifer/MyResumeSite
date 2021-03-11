@@ -2,6 +2,7 @@ import React, {useState, useRef, useEffect} from 'react';
 import {AnimatePresence} from 'framer-motion';
 import Card from './Card/Card';
 import Fade from 'react-reveal/Fade';
+import BounceArrow from '../BounceArrow/BounceArrow';
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
@@ -68,6 +69,8 @@ const Projects = () => {
             drag='x'
           />
         </AnimatePresence>
+        <BounceArrow direction={'right'} />
+        <BounceArrow direction={'left'} />
       </div>
     </Fade>
   );
