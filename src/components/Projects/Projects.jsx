@@ -1,8 +1,9 @@
+/* eslint-disable max-len */
 import React, {useState, useRef, useEffect} from 'react';
 import {AnimatePresence} from 'framer-motion';
 import Card from './Card/Card';
 import Fade from 'react-reveal/Fade';
-import BounceArrow from '../BounceArrow/BounceArrow';
+import Swipe from './swipe_right.gif';
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
@@ -27,6 +28,9 @@ const Projects = () => {
         style={{height: '130vh'}}
         id='projects'
       >
+        <div id='swipeimg' style={{position: 'absolute', left: '40%', zIndex: '10'}}>
+          <img src={Swipe} alt='swiping animation' style={{position: 'relative'}} onClick={() => document.getElementById('swipeimg').remove()}/>
+        </div>
         <AnimatePresence initial={false}>
           <Card
             key={index + 1}
@@ -69,8 +73,6 @@ const Projects = () => {
             drag='x'
           />
         </AnimatePresence>
-        <BounceArrow direction={'right'} />
-        <BounceArrow direction={'left'} />
       </div>
     </Fade>
   );
