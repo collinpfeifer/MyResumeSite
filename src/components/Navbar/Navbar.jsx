@@ -18,7 +18,7 @@ const NavBar = () => {
         className="button fas fa-bars"
         data-uk-toggle="target: #offcanvas-usage"
       />
-      <div id="offcanvas-usage" data-uk-offcanvas="mode:reveal; overlay:true;">
+      <div id="offcanvas-usage" data-uk-offcanvas="overlay:true;">
         <div className="uk-offcanvas-bar">
           <div className="navbarmain">
             <ul className="navbar-ul">

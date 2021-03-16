@@ -29,7 +29,7 @@ const Projects = () => {
         id='projects'
       >
         <div id='swipeimg' style={{position: 'absolute', left: '40%', zIndex: '10'}}>
-          <img src={Swipe} alt='swiping animation' style={{position: 'relative'}} onClick={() => document.getElementById('swipeimg').remove()}/>
+          <img src={Swipe} alt='swiping animation' style={{position: 'relative', cursor: 'pointer'}} onClick={() => document.getElementById('swipeimg').remove()}/>
         </div>
         <AnimatePresence initial={false}>
           <Card
