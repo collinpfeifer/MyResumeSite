@@ -3,7 +3,6 @@ import React, {useState, useRef, useEffect} from 'react';
 import {AnimatePresence} from 'framer-motion';
 import Card from './Card/Card';
 import Fade from 'react-reveal/Fade';
-import Swipe from './swipe_right.gif';
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
@@ -23,14 +22,14 @@ const Projects = () => {
 
   return (
     <Fade>
+      <h2 style={{ color: 'white', textAlign: 'center', marginTop:'10rem'}}>
+        drag right or left to view my projects
+      </h2>
       <div
-        className='uk-flex uk-flex-center uk-flex-middle'
-        style={{height: '130vh'}}
-        id='projects'
+        className="uk-flex uk-flex-center uk-flex-middle"
+        style={{ height: '80vh' }}
+        id="projects"
       >
-        <div id='swipeimg' style={{position: 'absolute', left: '40%', zIndex: '10'}}>
-          <img src={Swipe} alt='swiping animation' style={{position: 'relative', cursor: 'pointer'}} onClick={() => document.getElementById('swipeimg').remove()}/>
-        </div>
         <AnimatePresence initial={false}>
           <Card
             key={index + 1}
@@ -46,8 +45,8 @@ const Projects = () => {
               opacity: 0.5,
             }}
             transition={{
-              scale: {duration: 0.2},
-              opacity: {duration: 0.4},
+              scale: { duration: 0.2 },
+              opacity: { duration: 0.4 },
             }}
           />
           <Card
@@ -70,7 +69,7 @@ const Projects = () => {
             setExitX={setExitX}
             index={index}
             setIndex={setIndex}
-            drag='x'
+            drag="x"
           />
         </AnimatePresence>
       </div>

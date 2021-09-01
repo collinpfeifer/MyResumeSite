@@ -2,13 +2,13 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import {Helmet} from 'react-helmet';
-import styles from './Layout.module.css';
+import {container, content} from './Layout.module.css';
 import IndexHeader from '../IndexHeader';
 import BlogHeader from '../BlogHeader';
 
 const Layout = ({children, page}) => {
   return (
-    <div className={styles.container}>
+    <div className={container}>
       <Helmet>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no" />
@@ -60,7 +60,7 @@ const Layout = ({children, page}) => {
         ></script>
         <title>Collin Pfeifer</title>
       </Helmet>
-      <div className={styles.content}>
+      <div className={content}>
         {page === 'index' ? <IndexHeader/> : <BlogHeader/>}
         {children}
       </div>
