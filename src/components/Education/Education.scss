@@ -1,0 +1,53 @@
+.education-main {
+  height: 210vh;
+  .education-container {
+    position: relative;
+    .hse-card {
+      background: url(hse_logo.png);
+      background-repeat: no-repeat;
+      background-size: 50rem;
+      background-position: center;
+
+      position: relative;
+      width: 19rem;
+      height: 30rem;
+      margin: 20px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    .iu-card {
+      background: url(iu_logo.png);
+      background-repeat: no-repeat;
+      background-size: 38rem;
+      background-position: center;
+
+      position: relative;
+      width: 19rem;
+      height: 30rem;
+      margin: 20px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    .udemy-card {
+      background: url(udemy_logo.png);
+      background-repeat: no-repeat;
+      background-size: 38rem;
+      background-position: center;
+
+      position: relative;
+      width: 19rem;
+      height: 30rem;
+      margin: 20px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+  }
+}
+@media only screen and (min-width: 40rem) {
+  .education-main {
+    height: 85vh;
+  }
+}

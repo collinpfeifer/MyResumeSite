@@ -1,6 +1,7 @@
 import React from 'react';
 import './Experience.css';
 import Fade from 'react-reveal/Fade';
+// cant use modules for this component
 
 const Experience = () => {
   return (
@@ -26,7 +27,7 @@ const Experience = () => {
             </div>
             <div className="timeline-content">
               <Fade top>
-                <h5 className="title">Web Developemnt Intern</h5>
+                <h5 className="title">Web Development Intern</h5>
                 <p className="description">
                   Furthered my HTML5, CSS3, and JavaScript skills, specifically
                   with Node.js and ReactJS frameworks through a development

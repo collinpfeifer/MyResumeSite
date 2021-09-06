@@ -1,6 +1,6 @@
 ---
-title: "Modern React Redux Course"
 date: "2020-12-14"
+title: "Modern React Redux Course"
 ---
 
 ## Modern React Redux Course

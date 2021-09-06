@@ -1,6 +1,6 @@
 ---
-title: "Fusion 92 Internship"
 date: "2020-11-04"
+title: "Fusion 92 Internship"
 ---
 
 ## Fusion 92 Internship

@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 import {graphql, useStaticQuery, Link} from 'gatsby';
-import {posts, post} from '../css/blog.module.scss';
+import {postItem, postList} from '../css/blog.module.scss';
 
 const BlogPage = () => {
   const posts = useStaticQuery(graphql`
@@ -11,8 +11,8 @@ const BlogPage = () => {
           edges {
             node {
               frontmatter {
-                title
                 date
+                title
               }
               fields {
                 slug
@@ -27,10 +27,10 @@ const BlogPage = () => {
       <Layout page='blog'>
         <div className='uk-flex uk-flex-column uk-flex-center uk-flex-middle'>
           <h1>Blog</h1>
-          <ol className={posts}>
+          <ol className={postList}>
             {posts.allMarkdownRemark.edges.map((post) => {
               return (
-                <li className={post}>
+                <li className={postItem}>
                   <Link to={`/blog/${post.node.fields.slug}`}>
                     <h2>{post.node.frontmatter.title}</h2>
                     <p>{post.node.frontmatter.date}</p>

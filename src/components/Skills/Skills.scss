@@ -1,8 +1,7 @@
 .skillsmain {
   height: 100vh;
-  
 }
-.skillsblock{
+.skillsblock {
   width: 100%;
 }
 
@@ -29,15 +28,11 @@
 }
 
 @media only screen and (min-width: 40rem) {
-
-  .skillsmain{
-    height: 70vh;
-  }
   .rounded {
     height: 8.5vh;
     width: 5vw;
   }
-  .skillsblock{
-    width: 45%
+  .skillsblock {
+    width: 45%;
   }
 }

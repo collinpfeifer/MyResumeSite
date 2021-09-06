@@ -1,12 +1,14 @@
 /* eslint-disable max-len */
+// cant use modules for this one
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAddressCard} from '@fortawesome/free-solid-svg-icons';
-import {faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
-import {faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
-import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
-import {faCube} from '@fortawesome/free-solid-svg-icons';
-import {Link} from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
+import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faCube } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 import './Navbar.scss';
 
 const NavBar = () => {
@@ -38,6 +40,12 @@ const NavBar = () => {
                 <FontAwesomeIcon icon={faProjectDiagram} className="icon" />
                 <Link to="skills" className="navbar-a">
                   Skills
+                </Link>
+              </li>
+              <li className="navbar-li">
+                <FontAwesomeIcon icon={faGraduationCap} className="icon" />
+                <Link to="education" className="navbar-a">
+                  Education
                 </Link>
               </li>
               <li className="navbar-li">

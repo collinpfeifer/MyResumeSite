@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
+// cant use modules for this component
 import React from 'react';
-import './Contact.scss';
+import'./Contact.scss';
 import Fade from 'react-reveal/Fade';
 import emailjs, {init} from 'emailjs-com';
 import {store} from 'react-notifications-component';

@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+// cant use modules for this component
 import React from 'react';
 import './AboutMe.css';
 import Fade from 'react-reveal/Fade';

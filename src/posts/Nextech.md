@@ -1,6 +1,6 @@
 ---
-title: "Nextech Systems Summer Internship"
 date: "2020-08-04"
+title: "Nextech Systems Summer Internship"
 ---
 
 ## Nextech Systems Summer Internship

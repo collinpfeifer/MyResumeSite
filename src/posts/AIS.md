@@ -1,6 +1,6 @@
 ---
-title: "Advanced Intelligence Services Inc. Internship"
 date: "2020-10-15"
+title: "Advanced Intelligence Services Inc. Internship"
 ---
 
 ## Advanced Intelligence Services Inc. Internship

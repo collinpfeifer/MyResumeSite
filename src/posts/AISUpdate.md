@@ -1,6 +1,6 @@
 ---
-title: "Advanced Intelligence Services Inc. Update"
 date: "2021-01-15"
+title: "Advanced Intelligence Services Inc. Update"
 ---
 
 ## Advanced Intelligence Services Inc. Update
