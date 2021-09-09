@@ -1,5 +1,5 @@
 import React from 'react';
-import './Experience.css';
+import './Experience.scss';
 import Fade from 'react-reveal/Fade';
 // cant use modules for this component
 

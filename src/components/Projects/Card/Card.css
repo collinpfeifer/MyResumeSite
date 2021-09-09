@@ -5,7 +5,7 @@ hr {
 }
 
 #card {
-  width: 95vw;
+  width: 90vw;
   min-width: 357px;
   min-height: 487px;
   height: 60vh;
@@ -99,10 +99,14 @@ ul {
   margin: 0.6rem;
   word-wrap: nowrap;
 }
-
-@media only screen and (min-width: 40rem) {
+@media (min-width: 40rem) {
   #card {
-    width: 35vw;
-    height: 60vh;
+    width: 35rem;
+    height: 57vh;
+  }
+}
+@media (min-width: 64rem){
+  #card{
+    font-size: 1.3rem;
   }
 }

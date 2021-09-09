@@ -1,7 +1,8 @@
 /* eslint-disable max-len */
-import React, {useState, useRef, useEffect} from 'react';
-import {AnimatePresence} from 'framer-motion';
+import React, { useState, useRef, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Card from './Card/Card';
+import './Projects.css';
 import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
@@ -22,12 +23,9 @@ const Projects = () => {
 
   return (
     <Fade>
-      <h2 style={{ color: 'white', textAlign: 'center', marginTop:'10rem'}}>
-        drag right or left to view my projects
-      </h2>
+      <h2 className="drag">drag right or left to view my projects</h2>
       <div
-        className="uk-flex uk-flex-center uk-flex-middle"
-        style={{ height: '80vh' }}
+        className="projects-main uk-flex uk-flex-center uk-flex-middle"
         id="projects"
       >
         <AnimatePresence initial={false}>

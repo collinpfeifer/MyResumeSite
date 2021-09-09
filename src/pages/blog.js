@@ -6,22 +6,22 @@ import {postItem, postList} from '../css/blog.module.scss';
 
 const BlogPage = () => {
   const posts = useStaticQuery(graphql`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                date
-                title
-              }
-              fields {
-                slug
-              }
+    query {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        edges {
+          node {
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              title
+            }
+            fields {
+              slug
             }
           }
         }
       }
-    `);
+    }
+  `);
   return (
     <>
       <Layout page='blog'>

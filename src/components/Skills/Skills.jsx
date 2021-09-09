@@ -45,7 +45,6 @@ const Skills = () => {
         <Fade top>
           <div
             className="skillsblock uk-grid uk-grid-medium"
-            style={{margin: '0 auto'}}
             data-uk-grid
           >
             {renderedBadges}

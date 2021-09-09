@@ -1,5 +1,5 @@
 .contact-main {
-  height: 180vh;
+  height: 270vh;
   .contact-container {
     position: relative;
     .contact-card {
@@ -74,9 +74,23 @@
     }
   }
 }
-@media only screen and (min-width: 40rem) {
+@media (min-width: 20rem) and (max-width: 24rem) {
   .contact-main {
-    height: 140%;
+    height: 200vh;
+  }
+  .contact-card {
+    width: 24.5vw;
+    height: 27vh;
+  }
+}
+@media (min-width: 24rem) and (max-width: 26rem) {
+  .contact-main {
+    height: 190vh;
+  }
+}
+@media (min-width: 40rem) and (max-width: 82rem) {
+  .contact-main {
+    height: 100vh;
   }
   .contact-card {
     width: 24.5vw;
@@ -84,3 +98,8 @@
   }
 }
 
+@media (min-width: 82rem) {
+  .contact-main {
+    height: 45rem;
+  }
+}
