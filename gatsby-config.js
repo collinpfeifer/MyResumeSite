@@ -6,7 +6,6 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: 'myResumeSite',
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
