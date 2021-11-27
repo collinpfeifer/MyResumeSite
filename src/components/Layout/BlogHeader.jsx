@@ -1,22 +1,16 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import Self from './Welcome/self.jpg';
+import Self from '../../images/self.jpg'
 
 const BlogHeader = () => {
   return (
     <div>
-      <Link to="/blog">
-        <i
-          className="button fas fa-newspaper"
-          style={{right: '0', textDecoration: 'none', color: 'black'}}
-        />
-      </Link>
       <Link to="/">
         <img
           src={Self}
           alt="self"
           style={{
-            border: '3px black solid',
+            border: '4px white solid',
             left: '0',
             width: '6rem',
             borderRadius: '50%',

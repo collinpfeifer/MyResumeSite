@@ -1,17 +1,20 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Footer from '../Footer/Footer';
-import {Helmet} from 'react-helmet';
-import {container, content} from './Layout.module.css';
-import IndexHeader from '../IndexHeader';
-import BlogHeader from '../BlogHeader';
+import Footer from './Footer';
+import { Helmet } from 'react-helmet';
+import { container, content } from './Layout.module.css';
+import Navbar from './Navbar/Navbar';
+import BlogHeader from './BlogHeader';
 
-const Layout = ({children, page}) => {
+const Layout = ({ children, page }) => {
   return (
     <div className={container}>
       <Helmet>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no"
+        />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -61,7 +64,7 @@ const Layout = ({children, page}) => {
         <title>Collin Pfeifer</title>
       </Helmet>
       <div className={content}>
-        {page === 'index' ? <IndexHeader/> : <BlogHeader/>}
+        {page === 'index' ? <Navbar /> : <BlogHeader />}
         {children}
       </div>
       <Footer />

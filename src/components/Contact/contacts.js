@@ -4,7 +4,7 @@ export const contacts = [
     icon: 'fab fa-linkedin',
     link: 'https://www.linkedin.com/in/collin-pfeifer-5b77831a7/',
     user: 'Collin Pfeifer',
-    description: 'This is where I network and build my professional protfolio',
+    description: 'This is where I network and build my professional portfolio',
   },
   {
     icon: 'fab fa-github',

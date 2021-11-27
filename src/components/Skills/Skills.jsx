@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Typed from 'typed.js';
 import './Skills.scss';
-import '../../css/Typed.css';
-import {badges} from './badges';
+import './Typed.css';
+import { badges } from './badges';
 import Fade from 'react-reveal/Fade';
-import {Icon} from '@iconify/react';
+import { Icon } from '@iconify/react';
 
 const Skills = () => {
   const [typedText, setTypedText] = useState('$ Select a skill');
@@ -21,7 +21,7 @@ const Skills = () => {
     };
   }, [typedText]);
 
-  const renderedBadges = badges.map((badge) => {
+  const renderedBadges = badges.map(badge => {
     return (
       <div key={badge.description}>
         <article
@@ -43,10 +43,7 @@ const Skills = () => {
         id="skills"
       >
         <Fade top>
-          <div
-            className="skillsblock uk-grid uk-grid-medium"
-            data-uk-grid
-          >
+          <div className="skillsblock uk-grid uk-grid-medium" data-uk-grid>
             {renderedBadges}
           </div>
         </Fade>

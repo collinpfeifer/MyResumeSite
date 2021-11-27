@@ -1,64 +1,52 @@
 .education-main {
-  height: 450vw;
   .education-container {
     position: relative;
     .hse-card {
-      background: url(./images/hse_logo.png);
+      background: url(../../images/hse_logo.png);
       background-repeat: no-repeat;
       background-size: 50rem;
       background-position: center;
-
       position: relative;
-      width: 19rem;
-      height: 30rem;
+      max-width: 19rem;
       margin: 20px;
       overflow: hidden;
       border-radius: 10px;
-      box-sizing: border-box;
     }
     .iu-card {
-      background: url(./images/iu_logo.png);
+      background: url(../../images/iu_logo.png);
       background-repeat: no-repeat;
       background-size: 38rem;
       background-position: center;
-
       position: relative;
-      width: 19rem;
-      height: 30rem;
+      max-width: 19rem;
+      padding: 4rem 0;
       margin: 20px;
       overflow: hidden;
       border-radius: 10px;
-      box-sizing: border-box;
     }
     .udemy-card {
-      background: url(./images/udemy_logo.png);
+      background: url(../../images/udemy_logo.png);
       background-repeat: no-repeat;
       background-size: 38rem;
       background-position: center;
-
       position: relative;
-      width: 19rem;
-      height: 30rem;
+      max-width: 19rem;
+      padding: 1.5rem 0;
       margin: 20px;
       overflow: hidden;
       border-radius: 10px;
-      box-sizing: border-box;
     }
-  }
-}
-
-@media (min-width: 43rem) and (max-width: 65rem){
-  .education-main {
-    height: 70vw;
-  }
-}
-@media (min-width: 65rem) and (max-width: 76rem){
-  .education-main{
-    height: 60vh;
-  }
-}
-@media (min-width: 76em){
-  .education-main{
-    height: 40rem;
+    .linkedin-card {
+      background: url(../../images/linkedin_logo.png);
+      background-repeat: no-repeat;
+      background-size: 38rem;
+      background-position: center;
+      position: relative;
+      max-width: 19rem;
+      margin: 20px;
+      padding: 3rem 0;
+      overflow: hidden;
+      border-radius: 10px;
+    }
   }
 }

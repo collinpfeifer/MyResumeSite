@@ -101,6 +101,7 @@ const Card = props => {
               {projects[props.pIndex].icons.map(icon => {
                 return (
                   <Icon
+                    key={icon}
                     icon={icon}
                     width="40"
                     style={{ margin: '0.5rem' }}
@@ -131,7 +132,7 @@ const Card = props => {
           >
             {projects[props.pIndex].progress.map(item => {
               return (
-                <motion.li className="inline">
+                <motion.li className="inline" key={Date.now}>
                   <motion.div className="name">
                     <motion.svg
                       className="oct"

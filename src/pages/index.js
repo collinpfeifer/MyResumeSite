@@ -17,17 +17,13 @@ const App = () => {
     <>
       <ReactNotification />
       <Layout page="index">
-        <div className="uk-flex uk-flex-column uk-flex-wrap uk-flex-wrap-middle">
-          <div className="appmain">
-            <Welcome />
-            <AboutMe />
-            <Projects />
-            <Skills />
-            <Education />
-            <Experience />
-            <Contact />
-          </div>
-        </div>
+        <Welcome />
+        <AboutMe />
+        <Projects />
+        <Skills />
+        <Education />
+        <Experience />
+        <Contact />
       </Layout>
     </>
   );
