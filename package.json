@@ -1,0 +1,88 @@
+{
+  "name": "resume",
+  "private": true,
+  "description": "A resume site for Collin Pfeifer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy":"gatsby build --prefix-paths && gh-pages -d public -b main",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint:recommended",
+      "google"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^5.3.0",
+    "gatsby": "^4.1.6",
+    "gatsby-plugin-react-helmet": "^5.1.0",
+    "gatsby-plugin-sass": "^5.1.1",
+    "gatsby-plugin-sharp": "^4.1.4",
+    "gatsby-remark-images": "^6.1.4",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^4.1.3",
+    "gatsby-transformer-remark": "^5.1.4",
+    "gh-pages": "^3.2.3",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "^17.0.2",
+    "react-focus-lock": "^2.6.0",
+    "react-helmet": "^6.1.0",
+    "react-notifications-component": "^3.0.3",
+    "react-reveal": "^1.2.2",
+    "react-scroll": "^1.8.4",
+    "react-typed": "^1.2.0",
+    "sass": "^1.43.4",
+    "styled-components": "^5.3.3",
+    "typed.js": "^2.0.11",
+    "web-vitals": "^2.1.2"
+  },
+  "devDependencies": {
+    "@iconify-icons/ant-design": "^1.1.1",
+    "@iconify-icons/bx": "^1.1.0",
+    "@iconify-icons/cib": "^1.1.0",
+    "@iconify-icons/fa-brands": "^1.1.0",
+    "@iconify-icons/file-icons": "^1.1.3",
+    "@iconify-icons/icomoon-free": "^1.1.0",
+    "@iconify-icons/la": "^1.1.0",
+    "@iconify-icons/logos": "^1.1.8",
+    "@iconify-icons/mdi": "^1.1.40",
+    "@iconify-icons/simple-icons": "^1.1.51",
+    "@iconify-icons/vscode-icons": "^1.1.8",
+    "@iconify/react": "^3.1.0",
+    "prettier": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

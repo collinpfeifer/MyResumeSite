@@ -1,0 +1,17 @@
+.projects-main {
+  height: 70vh;
+}
+.drag {
+  color: white;
+  text-align: center;
+  margin: 5rem;
+}
+
+@media (min-width: 20rem) and (max-width: 24rem) {
+  .projects-main {
+    height: 100vh;
+  }
+  .drag{
+      margin: 5rem 0 0 0;
+  }
+}

@@ -1,0 +1,61 @@
+
+.skillsblock {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.badge {
+  border-radius: 20%;
+  transition: all 0.2s ease;
+  box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+}
+
+.rounded {
+  width: 8vw;
+  height: 4vh;
+  margin: 0.3rem;
+  background: white;
+  z-index: 10;
+  border-radius: 30%;
+  box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
+}
+
+.black {
+  color: black;
+  background: #333333;
+}
+@media only screen and (width: 20rem) {
+  .rounded {
+    height: 8.5vh;
+    width: 8vw;
+  }
+  .skillsblock {
+    width: 55%;
+  }
+  .skillsmain {
+    height: 130vh;
+  }
+}
+@media only screen and (min-width: 23rem) {
+  .rounded {
+    height: 6vh;
+    width: 10vw;
+  }
+  .skillsblock {
+    width: 70%;
+  }
+  .skillsmain {
+    height: 110vh;
+  }
+}
+
+@media only screen and (min-width: 40rem) {
+  .rounded {
+    height: 8.5vh;
+    width: 5vw;
+  }
+  .skillsblock {
+    width: 45%;
+  }
+}
