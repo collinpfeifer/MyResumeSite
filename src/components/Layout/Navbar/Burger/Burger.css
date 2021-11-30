@@ -1,8 +1,6 @@
 .line {
-  width: 4rem;
-  height: 0.5rem;
+  width: 4.7rem;
+  height: 0.65rem;
   border-radius: 10px;
   transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
 }

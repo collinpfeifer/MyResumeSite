@@ -169,5 +169,6 @@ export const projects = [
         percent: 13.4,
       },
     ],
+    site: 'https://www.collinpfeifer.dev'
   },
 ];

@@ -12,7 +12,7 @@ const Experience = () => {
       uk-flex-center
       uk-flex-column
       uk-flex-middle"
-        id='experience'
+        id="experience"
       >
         <div className="main-timeline">
           <div className="timeline">
@@ -105,6 +105,54 @@ const Experience = () => {
                   worked on the backend of a site with over a million hits per
                   year, improved security features throughout multiple Vue and
                   Express web-apps and APIs.
+                </p>
+              </Fade>
+            </div>
+          </div>
+
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer">
+                <span className="date">
+                  <span className="month">6 months</span>
+                  <span className="year">2020</span>
+                </span>
+              </div>
+            </div>
+            <div className="timeline-content">
+              <Fade bottom>
+                <h5 className="title">Web Development Intern</h5>
+                <p className="description">
+                  Led an intern web developer team in the development process
+                  for a security focused website built on a MERN (MongoDB,
+                  ExpressJS, React, and Node.js) stack to better appeal to
+                  customers around the world, and was able to grow leadership
+                  and team working abilities along with my developer knowledge.
+                </p>
+              </Fade>
+            </div>
+          </div>
+
+          <div className="timeline">
+            <div className="icon"></div>
+            <div className="date-content">
+              <div className="date-outer">
+                <span className="date">
+                  <span className="month">6 months</span>
+                  <span className="year">2020</span>
+                </span>
+              </div>
+            </div>
+            <div className="timeline-content">
+              <Fade bottom>
+                <h5 className="title">Web Development Intern</h5>
+                <p className="description">
+                  Led an intern web developer team in the development process
+                  for a security focused website built on a MERN (MongoDB,
+                  ExpressJS, React, and Node.js) stack to better appeal to
+                  customers around the world, and was able to grow leadership
+                  and team working abilities along with my developer knowledge.
                 </p>
               </Fade>
             </div>

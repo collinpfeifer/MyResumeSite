@@ -62,8 +62,7 @@ const AboutMe = () => {
               textAlign: 'center',
             }}
           >
-            I'm a 
-            <span id="welcometype"></span>
+            I'm a<span id="welcometype"></span>
             hoping to help others through any means I can
           </p>
           <div>
@@ -83,6 +82,7 @@ const AboutMe = () => {
                   width={35}
                 />
               </a>
+              <p>LinkedIn</p>
             </Hover>
             <Hover>
               <a href="https://twitter.com/pfeifer_collin" target="_blank">
@@ -92,6 +92,7 @@ const AboutMe = () => {
                   width={35}
                 />
               </a>
+              <p>Twitter</p>
             </Hover>
             <Hover>
               <a href="https://github.com/collinpfeifer" target="_blank">
@@ -106,6 +107,7 @@ const AboutMe = () => {
                   width={35}
                 />
               </a>
+              <p>GitHub</p>
             </Hover>
             <Hover>
               <a href="./collin-pfeifer-resume.pdf" download="">
@@ -118,6 +120,7 @@ const AboutMe = () => {
                   color="#ccc"
                 />
               </a>
+              <p>Resumé</p>
             </Hover>
           </div>
         </Fade>

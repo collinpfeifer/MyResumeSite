@@ -16,8 +16,8 @@ const Burger = ({ open, setOpen, ...props }) => {
         position: 'absolute',
         top: '5%',
         left: '3rem',
-        width: '4rem',
-        height: '4rem',
+        width: '4.7rem',
+        height: '4.7rem',
         background: 'transparent',
         border: 'none',
         outline: 'none',
@@ -29,23 +29,26 @@ const Burger = ({ open, setOpen, ...props }) => {
       <span
         className="line"
         style={{
-          background: '#EFFFFA',
+          background: '#fff',
           transform: `${open ? 'rotate(45deg)' : 'rotate(0)'}`,
+          position: `${open ? 'fixed' : 'relative'}`,
         }}
       />
       <span
         className="line"
         style={{
-          background: '#EFFFFA',
+          background: '#fff',
           opacity: `${open ? '0' : '1'}`,
           transform: `${open ? 'translateX(20px)' : 'translateX(0)'}`,
+          position: `${open ? 'fixed' : 'relative'}`,
         }}
       />
       <span
         className="line"
         style={{
-          background: '#EFFFFA',
-          transform: `${open ? 'rotate(-45deg)' : 'rotate(0)'}`,
+          background: '#fff',
+          transform: `${open ? 'rotate(-45deg) ' : 'rotate(0)'}`,
+          position: `${open ? 'fixed' : 'relative'}`,
         }}
       />
     </button>

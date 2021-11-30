@@ -43,7 +43,7 @@ const Skills = () => {
         id="skills"
       >
         <Fade top>
-          <div className="skillsblock uk-grid uk-grid-medium" data-uk-grid>
+          <div className="skillsblock uk-grid-medium" data-uk-grid>
             {renderedBadges}
           </div>
         </Fade>

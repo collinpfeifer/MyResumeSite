@@ -13,19 +13,19 @@ import apollographqlIcon from '@iconify-icons/simple-icons/apollographql';
 export const badges = [
   {
     font: html5Shield,
-    size: '4rem',
+    size: '3.7rem',
     description:
       '$ whatis html5<br/> `$ HTML5 (Hypertext Markup Language): The building blocks or skeleton of the internet`<br/> $ ^3000 cat collin_pfeifer.html<br/> ^1500 `HTML5:` <br/> `Overall: [################-] (95%)` <br/> `Semantics: [################-] (95%)` <br/> `File Structure: [###############--] (92%)` <br/> `Readability: [###############-] (96%)` <br/> ^1000 $ ',
   },
   {
     font: css3Shiled,
-    size: '4rem',
+    size: '3.7rem',
     description:
       '$ whatis css3<br/> `$ CSS3 (Cascading Style Sheets): The presentation and the color of the internet` <br /> $ ^3000 cat collin_pfeifer.css<br /> ^1500 `CSS3:` <br /> `Overall: [################-] (94%)` <br/> `Semantics: [################-] (95%)` <br/> `Flexbox: [###############--] (92%)` <br/> `Grid: [###############-] (96%)` <br/> `Modules: [###############-] (96%)` `Animations: [###############-] (96%)`<br/> ^1000 $',
   },
   {
     font: bxlJavascript,
-    size: '4.2rem',
+    size: '3.7rem',
     description:
       '$ whatis js<br/> `$ JavaScript: The dynamic and maullable part of the internet` <br /> $ ^3000 cat collin_pfeifer.js<br /> ^1500 `JavaScript:` <br /> `Overall: [################-] (94%)` <br/> `Semantics: [################-] (95%)` <br/> `Promises: [###############--] (92%)` <br/> `DOM Manipulation: [###############-] (96%)` <br/> `Arrow Functions: [###############-] (96%)`<br/> ^1000 $',
   },

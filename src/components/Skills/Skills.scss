@@ -1,7 +1,6 @@
-
 .skillsblock {
-  max-width: 30%;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .badge {
@@ -12,8 +11,7 @@
 }
 
 .rounded {
-  width: 8vw;
-  height: 4vh;
+  padding: 0.2rem;
   margin: 0.3rem;
   background: white;
   z-index: 10;
@@ -25,37 +23,8 @@
   color: black;
   background: #333333;
 }
-@media only screen and (width: 20rem) {
-  .rounded {
-    height: 8.5vh;
-    width: 8vw;
-  }
-  .skillsblock {
-    width: 55%;
-  }
-  .skillsmain {
-    height: 130vh;
-  }
-}
-@media only screen and (min-width: 23rem) {
-  .rounded {
-    height: 6vh;
-    width: 10vw;
-  }
-  .skillsblock {
-    width: 70%;
-  }
-  .skillsmain {
-    height: 110vh;
-  }
-}
-
-@media only screen and (min-width: 40rem) {
-  .rounded {
-    height: 8.5vh;
-    width: 5vw;
-  }
-  .skillsblock {
-    width: 45%;
+@media screen and (min-width: 40rem){
+  .skillsblock{
+    max-width: 25%;
   }
 }
