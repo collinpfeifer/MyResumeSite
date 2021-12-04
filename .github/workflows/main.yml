@@ -25,7 +25,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
             npm install
-            gatsby build
+            npm run build
         env:
           GATSBY_MAIL_ID: ${{ secrets.GATSBY_MAIL_ID }}
           GATSBY_SERVICE_ID: ${{ secrets.GATSBY_SERVICE_ID }}
