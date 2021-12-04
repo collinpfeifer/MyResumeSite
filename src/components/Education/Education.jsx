@@ -1,7 +1,7 @@
 import React from 'react';
+import EducationItem from './EducationItem.jsx';
+import { education } from './education.js';
 import './Education.scss';
-import Fade from 'react-reveal/Fade';
-import Hover from '../Hover/Hover';
 
 const Education = () => {
   return (
@@ -10,7 +10,7 @@ const Education = () => {
       data-uk-height-match="target: > div > div > div"
       id="education"
     >
-      <Fade left>
+      {/* <Fade left>
         <Hover>
           <div className="hse-card uk-flex uk-flex-middle uk-flex-column uk-flex-center ">
             <h2 style={{ padding: '1rem', fontWeight: 'bold' }}>
@@ -37,6 +37,7 @@ const Education = () => {
           </div>
         </Hover>
       </Fade>
+
       <Fade top>
         <Hover>
           <div className="iu-card uk-flex uk-flex-middle uk-flex-column uk-flex-center ">
@@ -65,7 +66,17 @@ const Education = () => {
             </h4>
           </div>
         </Hover>
-      </Fade>
+      </Fade> */}
+      {education.map(card => {
+        return (
+          <EducationItem
+            name={card.name}
+            description={card.description}
+            courses={card.courses}
+            cardClass={card.cardClass}
+          />
+        );
+      })}
     </div>
   );
 };

@@ -111,9 +111,7 @@
     width: 125px;
     height: 125px;
     font-size: 16px;
-    text-align: center;
     margin: auto;
-    z-index: 1;
     &:before {
       content: '';
       width: 125px;
@@ -124,8 +122,8 @@
       top: 0;
       left: 0;
       right: 0;
-      transition: all 0.33s ease-out 0s;
       background: #fff;
+      transition: all 0.33s ease-out 0s;
       border: 2px solid #232323;
       left: -6px;
     }
@@ -148,8 +146,7 @@
     width: 100%;
     margin: auto;
     position: absolute;
-    top: 27%;
-    left: 0;
+    top: 14px;
   }
   .month {
     font-size: 18px;
@@ -168,11 +165,23 @@
     float: right;
   }
   .title {
-    font-size: 19px;
+    font-size: 1.3rem;
     font-weight: 700;
     line-height: 24px;
     margin: 0 0 15px 0;
-    color: black;
+    color:rgb(157, 78, 221);
+  }
+  .company {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+    text-align: center;
+  }
+  .time{
+    color:rgb(157, 78, 221);
+    text-align: center;
+    font-weight: 600;
   }
   .description {
     margin-bottom: 0;
@@ -258,17 +267,5 @@
     .title {
       margin-bottom: 10px;
     }
-  }
-}
-
-@media (min-width: 40rem) and (max-width: 62rem) {
-  .container {
-    height: 150vh;
-  }
-}
-
-@media (min-width: 62rem) {
-  .container {
-    height: 130vh;
   }
 }

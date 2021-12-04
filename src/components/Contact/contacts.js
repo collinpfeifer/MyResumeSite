@@ -1,24 +1,29 @@
 /* eslint-disable max-len */
 export const contacts = [
   {
-    icon: 'fab fa-linkedin',
+    icon: 'akar-icons:linkedin-fill',
     link: 'https://www.linkedin.com/in/collin-pfeifer-5b77831a7/',
     user: 'Collin Pfeifer',
     description: 'This is where I network and build my professional portfolio',
   },
   {
-    icon: 'fab fa-github',
+    icon: 'akar-icons:twitter-fill',
+    link: 'https://twitter.com/pfeifer_collin',
+    user: 'pfeifer_collin',
+    description: 'This is where I post whatever is on my mind',
+  },
+  {
+    icon: 'akar-icons:github-fill',
     link: 'https://github.com/collinpfeifer',
     user: 'collinpfeifer',
     description:
       'This is where I display my code for personal or work purposes',
   },
   {
-    icon: 'fas fa-book',
-    link: 'https://bookshelf.website/collinpfeifer',
-    user: 'collinpfeifer',
+    icon: 'fluent:document-one-page-24-filled',
+    link: '../../../static/collin-pfeifer-resume.pdf',
+    user: 'collinpfeifer.pdf',
     description:
-      // eslint-disable-next-line quotes
-      'My own bookshelf to see what I\'ve been recently reading',
+      'My resumé made with Vue.js and CSS',
   },
 ];
