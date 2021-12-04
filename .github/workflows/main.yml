@@ -30,8 +30,15 @@ jobs:
           GATSBY_MAIL_ID: ${{ secrets.GATSBY_MAIL_ID }}
           GATSBY_SERVICE_ID: ${{ secrets.GATSBY_SERVICE_ID }}
           GATSBY_TEMPLATE_ID: ${{ secrets.GATSBY_TEMPLATE_ID }}
+          
+      - name: Check Environment Variables
+        run: |
+            echo "${{ secrets.GATSBY_MAIL_ID }}"
+            echo "${{ secrets.GATSBY_SERVICE_ID }}"
+            echo "${{ secrets.GATSBY_TEMPLATE_ID }}"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
+          FOLDER: ./
