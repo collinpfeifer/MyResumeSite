@@ -19,9 +19,13 @@ function EducationItem({ name, description, courses, cardClass }) {
               </div>
             </div>
             <div className="card-back">
-              <ul style={{maxWidth:'80%'}}>
+              <ul>
                 {courses.map(course => {
-                  return <li>{course}</li>;
+                  return (
+                    <li style={{fontWeight: '600' }}>
+                      {course}<br/>
+                    </li>
+                  );
                 })}
               </ul>
             </div>

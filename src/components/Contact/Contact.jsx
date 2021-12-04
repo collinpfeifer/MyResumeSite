@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import emailjs, { init } from 'emailjs-com';
 import { store } from 'react-notifications-component';
 import { contacts } from './contacts';
-import { Icon } from '@iconify/react';
+import ContactItem from './ContactItem.jsx';
 import './Contact.scss';
 
 const Contact = () => {
@@ -52,24 +52,6 @@ const Contact = () => {
       });
   };
 
-  const renderedContact = contacts.map(contact => {
-    return (
-      <div className="contact-card" key={contact.link}>
-        <div className="icon">
-          <Icon className="contact-icon" icon={contact.icon} />
-        </div>
-        <div className="contact-content">
-          <h3>
-            <a href={contact.link} target="__blank" download="">
-              {contact.user}
-            </a>
-          </h3>
-          <p>{contact.description}</p>
-        </div>
-      </div>
-    );
-  });
-
   return (
     <div
       className="contact-main uk-flex uk-flex-center uk-flex-middle uk-flex-column"
@@ -77,7 +59,16 @@ const Contact = () => {
     >
       <Fade top>
         <div className="contact-container uk-flex uk-flex-wrap uk-flex-center">
-          {renderedContact}
+          {contacts.map(contact => {
+            return (
+              <ContactItem
+                link={contact.link}
+                icon={contact.icon}
+                user={contact.user}
+                description={contact.description}
+              />
+            );
+          })}
         </div>
       </Fade>
       <Fade bottom>
