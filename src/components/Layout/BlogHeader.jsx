@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from 'gatsby';
-import Self from '../../images/self.jpg'
+import { Link } from 'gatsby';
+import Self from '../../images/self.jpg';
+import Fade from 'react-reveal';
 
 const BlogHeader = () => {
   return (
-    <div>
+    <Fade>
       <Link to="/">
         <img
           src={Self}
@@ -18,7 +19,7 @@ const BlogHeader = () => {
           }}
         />
       </Link>
-    </div>
+    </Fade>
   );
 };
 

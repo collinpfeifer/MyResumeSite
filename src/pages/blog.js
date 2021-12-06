@@ -2,6 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 import {graphql, useStaticQuery, Link} from 'gatsby';
+import Fade from 'react-reveal'
 import {postItem, postList} from '../css/blog.module.scss';
 
 const BlogPage = () => {
@@ -24,21 +25,23 @@ const BlogPage = () => {
   `);
   return (
     <>
-      <Layout page='blog'>
-        <div className='uk-flex uk-flex-column uk-flex-center uk-flex-middle'>
-          <h1>Blog</h1>
-          <ol className={postList}>
-            {posts.allMarkdownRemark.edges.map((post) => {
-              return (
-                <li className={postItem}>
-                  <Link to={`/blog/${post.node.fields.slug}`}>
-                    <h2>{post.node.frontmatter.title}</h2>
-                    <p>{post.node.frontmatter.date}</p>
-                  </Link>
-                </li>
-              );
-            })}
-          </ol>
+      <Layout page="blog">
+        <div className="uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+          <Fade bottom>
+            <h1>Blog</h1>
+            <ul className={postList}>
+              {posts.allMarkdownRemark.edges.map(post => {
+                return (
+                  <li className={postItem}>
+                    <Link to={`/blog/${post.node.fields.slug}`}>
+                      <h2>{post.node.frontmatter.title}</h2>
+                      <p>{post.node.frontmatter.date}</p>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Fade>
         </div>
       </Layout>
     </>

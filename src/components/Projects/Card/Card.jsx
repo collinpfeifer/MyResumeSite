@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import './Card.css';
-import { projects } from './projects.js';
+import { projects } from '../projects';
 import { Icon, InlineIcon } from '@iconify/react';
 import githubFilled from '@iconify-icons/ant-design/github-filled';
 import webIcon from '@iconify-icons/mdi/web';
+import './Card.css';
 
 const Card = props => {
   const x = useMotionValue(0);

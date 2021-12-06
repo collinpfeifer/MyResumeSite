@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import reactIcon from '@iconify-icons/logos/react';
 import reduxIcon from '@iconify-icons/logos/redux';
 import fileTypeNode from '@iconify-icons/vscode-icons/file-type-node';
@@ -13,7 +12,6 @@ import apollostackIcon from '@iconify-icons/logos/apollostack';
 import mysqlIcon from '@iconify-icons/logos/mysql';
 import materialUi from '@iconify-icons/logos/material-ui';
 import uikitIcon from '@iconify-icons/logos/uikit';
-
 
 export const projects = [
   {
@@ -97,6 +95,7 @@ export const projects = [
         percent: 1.1,
       },
     ],
+    site: 'https://recluse-stream.netlify.app',
   },
   {
     title: 'Voice Planner',
@@ -121,6 +120,7 @@ export const projects = [
         percent: 8.3,
       },
     ],
+    site: 'https://voice-planner.netlify.app',
   },
   {
     title: 'Habit Tracker',
@@ -132,8 +132,9 @@ export const projects = [
       mysqlIcon,
       nextJs,
     ],
-    link: 'https://github.com',
-    description: 'An app for bettering yourself by keeping habits and helping yourself grow. The habits are recorded in a Next.js UI interface and in a MySQL database',
+    link: 'https://github.com/collinpfeifer/HabitTracker',
+    description:
+      'An app for bettering yourself by keeping habits and helping yourself grow. The habits are recorded in a Next.js UI interface and in a MySQL database',
     progress: [
       {
         lang: 'TypeScript',
@@ -151,7 +152,8 @@ export const projects = [
     title: 'Resume Site',
     icons: [gatsbyIcon, reactIcon, bootstrapIcon, uikitIcon],
     link: 'https://github.com/collinpfeifer/myResumeSite',
-    description: 'My personal website, made with React, Gatsby for SSR, and BootStrap and UiKit for styling.',
+    description:
+      'My personal website, made with React, Gatsby for SSR, and BootStrap and UiKit for styling.',
     progress: [
       {
         lang: 'JavaScript',
@@ -169,6 +171,6 @@ export const projects = [
         percent: 13.4,
       },
     ],
-    site: 'https://www.collinpfeifer.dev'
+    site: 'https://www.collinpfeifer.dev',
   },
 ];

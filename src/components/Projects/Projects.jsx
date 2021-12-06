@@ -1,9 +1,8 @@
-/* eslint-disable max-len */
 import React, { useState, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Card from './Card/Card';
-import './Projects.css';
 import Fade from 'react-reveal/Fade';
+import './Projects.css';
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
@@ -22,7 +21,7 @@ const Projects = () => {
   }, [index]);
 
   return (
-    <div style={{margin: '20rem 0'}}>
+    <div style={{ marginTop: '20rem', marginBottom: '30rem' }}>
       <Fade>
         <h2 className="drag">drag right or left to view my projects</h2>
         <div
