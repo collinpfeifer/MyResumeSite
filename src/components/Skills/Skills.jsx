@@ -26,7 +26,6 @@ const Skills = () => {
     <>
       <div
         className="uk-flex uk-flex-wrap uk-flex-center uk-flex-middle"
-        style={{ margin: '15rem 0' }}
         id="skills"
       >
         <Fade top>

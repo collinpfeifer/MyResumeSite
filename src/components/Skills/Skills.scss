@@ -1,8 +1,6 @@
-
-.skillsblock {
-  margin: auto;
+#skills {
+  margin: 15rem 0;
 }
-
 .badge {
   border-radius: 20%;
   transition: all 0.2s ease;
@@ -23,8 +21,18 @@
   color: black;
   background: #333333;
 }
-@media screen and (min-width: 40rem){
-  .skillsblock{
+
+@media screen and (max-width: 640px) {
+  #skills {
+    margin: 30rem 0 15rem 0;
+  }
+
+  .skillsblock {
+    margin: auto !important;
+  }
+}
+@media screen and (min-width: 40rem) {
+  .skillsblock {
     max-width: 25%;
   }
 }
