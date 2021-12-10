@@ -77,7 +77,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         to="projects"
         tabIndex={tabIndex}
         smooth={true}
-        offset={-500}
+        offset={-50}
         onClick={() => {
           setOpen(false);
         }}

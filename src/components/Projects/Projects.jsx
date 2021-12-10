@@ -22,13 +22,10 @@ const Projects = () => {
   }, [index]);
 
   return (
-    <div style={{ marginTop: '20rem', marginBottom: '60rem' }}>
+    <div id="projects">
       <Fade>
         <h2 className="drag">drag right or left to view my projects</h2>
-        <div
-          className="projects-main uk-flex uk-flex-center uk-flex-middle"
-          id="projects"
-        >
+        <div className="projects-main uk-flex uk-flex-center uk-flex-middle">
           <AnimatePresence initial={false}>
             <Card
               key={index + 1}
