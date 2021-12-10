@@ -26,22 +26,22 @@ const AboutMe = () => {
         <div className="box b">
           <Fade top>
             <h2 className="about-h2">Dream Job</h2>
-            developer or a college professor specializing in computer science,
+            therapist, developer or a college professor specializing in computer science,
             math, or psychology. <br /> <br />
-            <h2 className="about-h2">Dream City</h2>Washington D.C. <br />
+            <h2 className="about-h2">Dream City</h2>Washington D.C. and
             New York City
           </Fade>
         </div>
         <div className="box c">
           <Fade bottom>
             <h2 className="about-h2">Role Models</h2>
-            E.O. Scott, Albert Einstein, Bobby Fischer
+            E.O. Scott, Albert Einstein, Phillipa Foot
           </Fade>
         </div>
         <div className="box d">
           <Fade bottom>
             <h2 className="about-h2">Music</h2>
-            top artists are Kanye West and Kota the Friend
+            top artists are Kanye West, MF DOOM and Freddie Gibbs
           </Fade>
         </div>
       </div>

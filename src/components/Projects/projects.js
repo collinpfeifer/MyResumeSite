@@ -36,7 +36,7 @@ export const projects = [
     ],
     link: 'https://github.com/collinpfeifer/JSLab',
     description:
-      'TweetGram is a social media clone app, allowing for CRUD features with authentication, data storage with MongoDB, and data access through GraphQL. ',
+      'JSLab is a React app made for testing ideas and brainstorming in React, running on a custom made assembly bundle made with esbuild and renders JavaScript in real time using a monaco web-based editor.',
     site: 'https://jslab.netlify.app',
     progress: [
       {
