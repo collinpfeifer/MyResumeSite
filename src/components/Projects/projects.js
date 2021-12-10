@@ -1,28 +1,13 @@
-import reactIcon from '@iconify-icons/logos/react';
-import reduxIcon from '@iconify-icons/logos/redux';
-import fileTypeNode from '@iconify-icons/vscode-icons/file-type-node';
-import nextJs from '@iconify-icons/cib/next-js';
-import typescriptIcon from '@iconify-icons/logos/typescript-icon';
-import fileTypeMongo from '@iconify-icons/vscode-icons/file-type-mongo';
-import expressIcon from '@iconify-icons/simple-icons/express';
-import graphqlIcon from '@iconify-icons/logos/graphql';
-import gatsbyIcon from '@iconify-icons/logos/gatsby';
-import bootstrapIcon from '@iconify-icons/logos/bootstrap';
-import apollostackIcon from '@iconify-icons/logos/apollostack';
-import mysqlIcon from '@iconify-icons/logos/mysql';
-import materialUi from '@iconify-icons/logos/material-ui';
-import uikitIcon from '@iconify-icons/logos/uikit';
-
 export const projects = [
   {
     title: 'TweetGram',
     icons: [
-      reactIcon,
-      materialUi,
-      fileTypeNode,
-      fileTypeMongo,
-      graphqlIcon,
-      apollostackIcon,
+      'logos:react',
+      'logos:material-ui',
+      'vscode-icons:file-type-node',
+      'vscode-icons:file-type-mongo',
+      'logos:graphql',
+      'logos:apollostack',
     ],
     link: 'https://github.com/collinpfeifer/TweetGram',
     description:
@@ -42,14 +27,39 @@ export const projects = [
     ],
   },
   {
+    title: 'JSLab',
+    icons: [
+      'logos:typescript-icon',
+      'logos:react',
+      'logos:redux',
+      'logos:esbuild',
+    ],
+    link: 'https://github.com/collinpfeifer/JSLab',
+    description:
+      'TweetGram is a social media clone app, allowing for CRUD features with authentication, data storage with MongoDB, and data access through GraphQL. ',
+    site: 'https://jslab.netlify.app',
+    progress: [
+      {
+        lang: 'Javascript',
+        percent: 97.1,
+        color: '#f7df1e',
+      },
+      {
+        lang: 'HTML',
+        percent: 2.9,
+        color: 'orange',
+      },
+    ],
+  },
+  {
     title: 'hello friend',
     icons: [
-      typescriptIcon,
-      reactIcon,
-      fileTypeNode,
-      expressIcon,
-      fileTypeMongo,
-      nextJs,
+      'logos:typescript-icon',
+      'logos:react',
+      'vscode-icons:file-type-node',
+      'simple-icons:express',
+      'vscode-icons:file-type-mongo',
+      'cib:next-js',
     ],
     link: 'https://github.com/collinpfeifer/hellofriend',
     description:
@@ -74,7 +84,7 @@ export const projects = [
   },
   {
     title: 'Recluse Stream',
-    icons: [reactIcon, reduxIcon, fileTypeNode],
+    icons: ['logos:react', 'logos:redux', 'vscode-icons:file-type-node'],
     link: 'https://github.com/collinpfeifer/RecluseStream',
     description:
       'Recluse Stream is a web app made for easily streaming video to anyone. With Google Auth authentication for easy account creation and integration with popular streaming service OBS.',
@@ -99,7 +109,7 @@ export const projects = [
   },
   {
     title: 'Voice Planner',
-    icons: [typescriptIcon, reactIcon, reduxIcon],
+    icons: ['logos:typescript-icon', 'logos:react', 'logos:redux'],
     link: 'https://github.com/collinpfeifer/voicePlanner',
     description:
       'An app made for logging audio notes to help yourself stay better organized, and build better planning skills. The recordings are organized by day for easy conveinence.',
@@ -125,12 +135,12 @@ export const projects = [
   {
     title: 'Habit Tracker',
     icons: [
-      typescriptIcon,
-      reactIcon,
-      graphqlIcon,
-      apollostackIcon,
-      mysqlIcon,
-      nextJs,
+      'logos:typescript-icon',
+      'logos:react',
+      'logos:graphql',
+      'logos:apollostack',
+      'logos:mysql',
+      'cib:next-js',
     ],
     link: 'https://github.com/collinpfeifer/HabitTracker',
     description:
@@ -150,7 +160,7 @@ export const projects = [
   },
   {
     title: 'Resume Site',
-    icons: [gatsbyIcon, reactIcon, bootstrapIcon, uikitIcon],
+    icons: ['logos:gatsby', 'logos:react', 'logos:bootstrap', 'logos:uikit'],
     link: 'https://github.com/collinpfeifer/myResumeSite',
     description:
       'My personal website, made with React, Gatsby for SSR, and BootStrap and UiKit for styling.',

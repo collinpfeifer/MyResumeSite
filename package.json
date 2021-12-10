@@ -73,6 +73,7 @@
     "@iconify-icons/mdi": "^1.1.40",
     "@iconify-icons/simple-icons": "^1.1.51",
     "@iconify-icons/vscode-icons": "^1.1.8",
+    "@iconify/icons-logos": "^1.1.10",
     "@iconify/react": "^3.1.0",
     "prettier": "^2.4.1"
   },

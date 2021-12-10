@@ -1,5 +1,5 @@
 import React from 'react';
-import {experience} from './experience.js';
+import { experience } from './experience.js';
 import ExperienceItem from './ExperienceItem.jsx';
 import './Experience.scss';
 
@@ -18,6 +18,7 @@ const Experience = () => {
           {experience.map(role => {
             return (
               <ExperienceItem
+                key={role.link}
                 name={role.name}
                 description={role.description}
                 company={role.company}

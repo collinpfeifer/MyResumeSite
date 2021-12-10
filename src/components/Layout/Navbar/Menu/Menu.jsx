@@ -142,7 +142,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         className="menu-a"
         to="/blog"
         tabIndex={tabIndex}
-        smooth={true}
+        smooth='true'
       >
         <span aria-hidden="true">📰 </span>
         Blog

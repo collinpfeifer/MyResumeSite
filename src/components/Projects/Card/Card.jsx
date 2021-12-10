@@ -2,8 +2,6 @@ import React from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { projects } from '../projects';
 import { Icon, InlineIcon } from '@iconify/react';
-import githubFilled from '@iconify-icons/ant-design/github-filled';
-import webIcon from '@iconify-icons/mdi/web';
 import './Card.css';
 
 const Card = props => {
@@ -68,7 +66,7 @@ const Card = props => {
           target="_blank"
         >
           <InlineIcon
-            icon={githubFilled}
+            icon="ant-design:github-filled"
             width="40"
             style={{ margin: '0.5rem', position: 'absolute' }}
           />
@@ -80,7 +78,7 @@ const Card = props => {
             target="_blank"
           >
             <InlineIcon
-              icon={webIcon}
+              icon="mdi:web"
               width="40"
               style={{ margin: '0.5rem', position: 'absolute', right: '0' }}
             />
@@ -101,11 +99,10 @@ const Card = props => {
               {projects[props.pIndex].icons.map(icon => {
                 return (
                   <Icon
-                    key={icon}
+                    key={Math.random()}
                     icon={icon}
                     width="40"
                     style={{ margin: '0.5rem' }}
-                    key={icon}
                   />
                 );
               })}
@@ -132,7 +129,7 @@ const Card = props => {
           >
             {projects[props.pIndex].progress.map(item => {
               return (
-                <motion.li className="inline" key={Date.now}>
+                <motion.li className="inline" key={Math.random()}>
                   <motion.div className="name">
                     <motion.svg
                       className="oct"

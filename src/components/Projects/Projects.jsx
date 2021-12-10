@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Card from './Card/Card';
 import Fade from 'react-reveal/Fade';
+import { projects } from './projects';
 import './Projects.css';
 
 const Projects = () => {
@@ -11,8 +12,8 @@ const Projects = () => {
   const fadedIndex = useRef(1);
 
   useEffect(() => {
-    if (fadedIndex.current === 5) {
-      focusIndex.current = 5;
+    if (fadedIndex.current === projects.length - 1) {
+      focusIndex.current = projects.length - 1;
       fadedIndex.current = 0;
     } else {
       focusIndex.current = fadedIndex.current;

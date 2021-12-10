@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 export const contacts = [
   {
     icon: 'akar-icons:linkedin-fill',
@@ -24,6 +23,6 @@ export const contacts = [
     link: '../../../static/collin-pfeifer-resume.pdf',
     user: 'collinpfeifer.pdf',
     description:
-      'My resumé made with Vue.js and CSS',
+      'My resumé made with Vue.js and LESS',
   },
 ];

@@ -62,6 +62,7 @@ const Contact = () => {
           {contacts.map(contact => {
             return (
               <ContactItem
+                key={contact.link}
                 link={contact.link}
                 icon={contact.icon}
                 user={contact.user}

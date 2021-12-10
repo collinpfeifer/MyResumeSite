@@ -1,11 +1,12 @@
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import Typed from 'typed.js';
-import './Skills.scss';
-import './Typed.css';
+import Hover from '../Hover/Hover';
 import { badges } from './badges';
 import Fade from 'react-reveal/Fade';
 import { Icon } from '@iconify/react';
+import './Skills.scss';
+import './Typed.css';
 
 const Skills = () => {
   const [typedText, setTypedText] = useState('$ Select a skill');
@@ -21,31 +22,29 @@ const Skills = () => {
     };
   }, [typedText]);
 
-  const renderedBadges = badges.map(badge => {
-    return (
-      <div key={badge.description}>
-        <article
-          onClick={() => setTypedText(badge.description)}
-          className="badge black"
-        >
-          <div className="rounded uk-flex uk-flex-center uk-flex-middle uk-flex-column">
-            <Icon icon={badge.font} id="icon" width={badge.size} />
-          </div>
-        </article>
-      </div>
-    );
-  });
-
   return (
     <>
       <div
         className="uk-flex uk-flex-wrap uk-flex-center uk-flex-middle"
-        style={{margin: '15rem 0'}}
+        style={{ margin: '15rem 0' }}
         id="skills"
       >
         <Fade top>
-          <div className="skillsblock uk-grid-medium" data-uk-grid>
-            {renderedBadges}
+          <div className="skillsblock" data-uk-grid>
+            {badges.map(badge => {
+              return (
+                <Hover key={badge.description}>
+                  <article
+                    onClick={() => setTypedText(badge.description)}
+                    className="badge black"
+                  >
+                    <div className="rounded uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+                      <Icon icon={badge.font} id="icon" width='3.7rem' />
+                    </div>
+                  </article>
+                </Hover>
+              );
+            })}
           </div>
         </Fade>
         <Fade bottom>

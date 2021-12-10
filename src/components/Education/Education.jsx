@@ -7,12 +7,12 @@ const Education = () => {
   return (
     <div
       className="education-container uk-flex uk-flex-center uk-flex-wrap"
-      data-uk-height-match="target: > div > div > div"
       id="education"
     >
       {education.map(card => {
         return (
           <EducationItem
+            key={card.name}
             name={card.name}
             description={card.description}
             courses={card.courses}
