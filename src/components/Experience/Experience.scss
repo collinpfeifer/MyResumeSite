@@ -90,6 +90,10 @@
       left: 3px;
     }
   }
+  .date-img {
+    border-radius: 50%;
+    margin-left: 0.7rem;
+  }
   .date-content {
     width: 50%;
     float: left;
@@ -169,7 +173,7 @@
     font-weight: 700;
     line-height: 24px;
     margin: 0 0 15px 0;
-    color:rgb(157, 78, 221);
+    color: rgb(157, 78, 221);
   }
   .company {
     font-size: 1.6rem;
@@ -178,8 +182,8 @@
     margin: 0 0 15px 0;
     text-align: center;
   }
-  .time{
-    color:rgb(157, 78, 221);
+  .time {
+    color: rgb(157, 78, 221);
     text-align: center;
     font-weight: 600;
   }
@@ -253,8 +257,9 @@
         height: 110px;
       }
     }
-    .date {
-      top: 30%;
+    .date-img{
+      width: 85px;
+      height: 85px;
     }
     .year {
       font-size: 24px;

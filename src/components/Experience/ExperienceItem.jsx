@@ -17,7 +17,7 @@ function ExperienceItem({
           <span className="date">
             <img
               src={picture}
-              style={{ borderRadius: '50%', marginLeft:'0.7rem'}}
+              className='date-img'
             />
           </span>
         </div>

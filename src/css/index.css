@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   -ms-overflow-style: hidden; /* IE and Edge */
   scrollbar-width: none;
