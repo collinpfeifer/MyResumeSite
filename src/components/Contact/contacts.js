@@ -20,7 +20,7 @@ export const contacts = [
   },
   {
     icon: 'fluent:document-one-page-24-filled',
-    link: '../../../static/collin-pfeifer-resume.pdf',
+    link: './collin-pfeifer-resume.pdf',
     user: 'collinpfeifer.pdf',
     description:
       'My resumé made with Vue.js and LESS',
