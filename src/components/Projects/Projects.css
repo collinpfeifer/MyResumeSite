@@ -3,9 +3,3 @@
   text-align: center;
   margin-bottom: 25rem;
 }
-
-@media (min-width: 20rem) and (max-width: 24rem) {
-  .drag {
-    margin: 5rem 0 0 0;
-  }
-}
