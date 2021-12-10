@@ -22,7 +22,7 @@ const Projects = () => {
   }, [index]);
 
   return (
-    <div style={{ marginTop: '20rem', marginBottom: '30rem' }}>
+    <div style={{ marginTop: '20rem', marginBottom: '60rem' }}>
       <Fade>
         <h2 className="drag">drag right or left to view my projects</h2>
         <div
