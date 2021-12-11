@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import './blog.css';
 import { graphql } from 'gatsby';
+import './blog.css';
 
 export const query = graphql`
   query ($slug: String!) {
