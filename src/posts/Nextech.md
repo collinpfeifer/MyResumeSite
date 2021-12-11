@@ -1,9 +1,9 @@
 ---
 date: "2020-08-04"
-title: "Nextech Systems Summer Internship"
+title: "Nextech Summer Internship"
 ---
 
-## Nextech Systems Summer Internship
+## Nextech Summer Internship
 
 ![guy sitting](./images/nextech.jpg)
 
