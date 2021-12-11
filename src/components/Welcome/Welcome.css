@@ -1,5 +1,6 @@
 .aboutmain {
   padding: 13rem 0;
+  overflow: hidden;
 }
 
 #welcometype {

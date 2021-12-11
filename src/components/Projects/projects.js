@@ -15,7 +15,7 @@ export const projects = [
     site: 'https://tweetgram.netlify.app',
     progress: [
       {
-        lang: 'Javascript',
+        lang: 'JavaScript',
         percent: 97.1,
         color: '#f7df1e',
       },
@@ -40,13 +40,18 @@ export const projects = [
     site: 'https://jslab.netlify.app',
     progress: [
       {
-        lang: 'Javascript',
-        percent: 97.1,
-        color: '#f7df1e',
+        lang: 'TypeScript',
+        percent: 80.2,
+        color: '#2b7489',
+      },
+      {
+        lang: 'CSS',
+        percent: 15.0,
+        color: '#563d7c',
       },
       {
         lang: 'HTML',
-        percent: 2.9,
+        percent: 4.8,
         color: 'orange',
       },
     ],
@@ -66,7 +71,7 @@ export const projects = [
       'Hello Friend is web app designed to help everyone get to know themselves better. Allowing you to know your personality types, ennegram, and mental illnesses, along with the chance to chat with similar people in real time.',
     progress: [
       {
-        lang: 'Javascript',
+        lang: 'JavasScript',
         color: '#f7df1e',
         percent: 66.67,
       },
