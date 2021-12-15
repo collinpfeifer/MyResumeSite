@@ -147,7 +147,7 @@ export const projects = [
       'logos:mysql',
       'cib:next-js',
     ],
-    link: 'https://github.com/collinpfeifer/HabitTracker',
+    link: 'https://github.com/collinpfeifer/HabitTracker-Client',
     description:
       'An app for bettering yourself by keeping habits and helping yourself grow. The habits are recorded in a Next.js UI interface and in a MySQL database',
     progress: [
