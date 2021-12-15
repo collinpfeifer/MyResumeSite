@@ -9,7 +9,7 @@ export const projects = [
       'logos:graphql',
       'logos:apollostack',
     ],
-    link: 'https://github.com/collinpfeifer/TweetGram',
+    link: 'https://github.com/collinpfeifer/TweetGram-Client',
     description:
       'TweetGram is a social media clone app, allowing for CRUD features with authentication, data storage with MongoDB, and data access through GraphQL. ',
     site: 'https://tweetgram.netlify.app',
@@ -66,7 +66,7 @@ export const projects = [
       'vscode-icons:file-type-mongo',
       'cib:next-js',
     ],
-    link: 'https://github.com/collinpfeifer/hellofriend',
+    link: 'https://github.com/collinpfeifer/HelloFriend-Client',
     description:
       'Hello Friend is web app designed to help everyone get to know themselves better. Allowing you to know your personality types, ennegram, and mental illnesses, along with the chance to chat with similar people in real time.',
     progress: [
@@ -90,7 +90,7 @@ export const projects = [
   {
     title: 'Recluse Stream',
     icons: ['logos:react', 'logos:redux', 'vscode-icons:file-type-node'],
-    link: 'https://github.com/collinpfeifer/RecluseStream',
+    link: 'https://github.com/collinpfeifer/RecluseStream-Client',
     description:
       'Recluse Stream is a web app made for easily streaming video to anyone. With Google Auth authentication for easy account creation and integration with popular streaming service OBS.',
     progress: [
@@ -115,7 +115,7 @@ export const projects = [
   {
     title: 'Voice Planner',
     icons: ['logos:typescript-icon', 'logos:react', 'logos:redux'],
-    link: 'https://github.com/collinpfeifer/voicePlanner',
+    link: 'https://github.com/collinpfeifer/VoicePlanner-Client',
     description:
       'An app made for logging audio notes to help yourself stay better organized, and build better planning skills. The recordings are organized by day for easy conveinence.',
     progress: [
@@ -166,7 +166,7 @@ export const projects = [
   {
     title: 'Resume Site',
     icons: ['logos:gatsby', 'logos:react', 'logos:bootstrap', 'logos:uikit'],
-    link: 'https://github.com/collinpfeifer/myResumeSite',
+    link: 'https://github.com/collinpfeifer/MyResumeSite',
     description:
       'My personal website, made with React, Gatsby for SSR, and BootStrap and UiKit for styling.',
     progress: [
