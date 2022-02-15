@@ -1,7 +1,7 @@
 export const contacts = [
   {
     icon: 'akar-icons:linkedin-fill',
-    link: 'https://www.linkedin.com/in/collin-pfeifer-5b77831a7/',
+    link: 'https://www.linkedin.com/in/collin-pfeifer/',
     user: 'Collin Pfeifer',
     description: 'This is where I network and build my professional portfolio',
   },

@@ -68,7 +68,7 @@ const AboutMe = () => {
           <div>
             <Hover>
               <a
-                href="https://www.linkedin.com/in/collin-pfeifer-5b77831a7/"
+                href="https://www.linkedin.com/in/collin-pfeifer/"
                 target="_blank"
               >
                 <Icon
