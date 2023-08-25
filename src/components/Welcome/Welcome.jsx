@@ -110,7 +110,7 @@ const AboutMe = () => {
               <p>GitHub</p>
             </Hover>
             <Hover>
-              <a href="./collin-pfeifer-resume.pdf" download="">
+              <a href="collin_pfeifer_resume.pdf" download="collin_pfeifer_resume.pdf">
                 <Icon
                   icon="fluent:document-one-page-24-filled"
                   style={{

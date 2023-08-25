@@ -20,9 +20,8 @@ export const contacts = [
   },
   {
     icon: 'fluent:document-one-page-24-filled',
-    link: './collin-pfeifer-resume.pdf',
-    user: 'collinpfeifer.pdf',
-    description:
-      'My resumé made with Vue.js and LESS',
+    link: 'collin_pfeifer_resume.pdf',
+    user: 'collin_pfeifer.pdf',
+    description: 'My resume I made with Resumake.com',
   },
 ];
